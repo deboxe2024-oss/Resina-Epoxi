@@ -6,6 +6,7 @@ import { Guarantee } from '@/components/landing/guarantee';
 import { Hero } from '@/components/landing/hero';
 import { Instructor } from '@/components/landing/instructor';
 import { Pricing } from '@/components/landing/pricing';
+import { StudentResults } from '@/components/landing/student-results';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { WhatYouWillLearn } from '@/components/landing/what-you-will-learn';
 
@@ -22,6 +23,7 @@ export default function Home() {
         <TargetAudience />
         <Instructor />
         <Faq />
+        <StudentResults />
       </main>
       <Footer />
     </div>
