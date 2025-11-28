@@ -63,7 +63,7 @@ export const StudentResults = () => {
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            ⭐ Resultados de Nossos Alunos
+            ⭐ Resultados de Nossas Alunas
           </h2>
           <p className="mt-4 text-lg text-gray-600">
             Veja o que nossos alunos criaram com o conhecimento do curso. Resultados incríveis em pouco tempo!

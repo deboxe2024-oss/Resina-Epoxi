@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -9,7 +10,7 @@ export const Guarantee = () => {
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 text-center lg:text-left">
           <div className="flex-shrink-0">
             <Image
-              src="https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fselo-garantia.4f220d91.png&w=256&q=75"
+              src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.07022505416642577.png"
               alt="Selo de Garantia de 7 dias"
               width={200}
               height={200}
@@ -23,7 +24,7 @@ export const Guarantee = () => {
             <p className="mt-4 text-lg text-gray-300">
               Se você não gostar do curso, por qualquer motivo, basta nos enviar um e-mail dentro de 7 dias e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Button
                 asChild
                 size="lg"
@@ -32,6 +33,16 @@ export const Guarantee = () => {
                 <a href="#pricing">
                     QUERO ACESSAR AGORA
                 </a>
+                </Button>
+                <Button
+                  asChild
+                  size="lg"
+                  variant="outline"
+                  className="h-14 px-8 text-lg font-bold bg-transparent hover:bg-white/10 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                  <a href="#student-results">
+                    Resultado de nossas Alunas
+                  </a>
                 </Button>
             </div>
           </div>

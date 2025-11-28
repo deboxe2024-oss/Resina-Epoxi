@@ -1,3 +1,4 @@
+"use client";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Check } from 'lucide-react';
@@ -44,15 +45,28 @@ export const Hero = () => {
           </div>
         </div>
 
-        <Button
-          asChild
-          size="lg"
-          className="h-14 px-8 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-        >
-          <a href="#pricing">
-            QUERO GARANTIR MINHA VAGA
-          </a>
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4">
+          <Button
+            asChild
+            size="lg"
+            className="h-14 px-8 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <a href="#pricing">
+              QUERO GARANTIR MINHA VAGA
+            </a>
+          </Button>
+          <Button
+            asChild
+            size="lg"
+            variant="outline"
+            className="h-14 px-8 text-lg font-bold rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+          >
+            <a href="#student-results">
+              Resultado de nossas Alunas
+            </a>
+          </Button>
+        </div>
+
 
         <p className="text-gray-600">✨ + de 3.000 alunas satisfeitas</p>
       </div>

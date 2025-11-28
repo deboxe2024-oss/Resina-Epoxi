@@ -51,7 +51,7 @@ export const Faq = () => {
             </AccordionItem>
           ))}
         </Accordion>
-        <div className="mt-12 text-center">
+        <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <Button
             asChild
             size="lg"
@@ -60,6 +60,16 @@ export const Faq = () => {
             <a href="#pricing">
                 QUERO ACESSAR AGORA
             </a>
+            </Button>
+            <Button
+              asChild
+              size="lg"
+              variant="outline"
+              className="h-14 px-8 text-lg font-bold rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            >
+              <a href="#student-results">
+                Resultado de nossas Alunas
+              </a>
             </Button>
         </div>
       </div>
