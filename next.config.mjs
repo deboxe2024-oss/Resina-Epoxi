@@ -1,7 +1,5 @@
-import type {NextConfig} from 'next';
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -39,7 +37,13 @@ const nextConfig: NextConfig = {
         hostname: 'nwuievvpcjrmecujwfox.supabase.co',
         port: '',
         pathname: '/**',
-      }
+      },
+      {
+        protocol: 'https',
+        hostname: 'kdloteojnkcjblhoirea.supabase.co',
+        port: '',
+        pathname: '/**',
+      },
     ],
   },
 };
