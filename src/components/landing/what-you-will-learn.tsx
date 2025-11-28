@@ -37,19 +37,27 @@ const learnItemsPart2 = [
     title: "Moldes sem danos",
     description: "Como usar e conservar moldes sem rasgar ou grudar.",
   },
-  {
-    icon: <Sparkles className="w-6 h-6 text-primary" />,
-    title: "Efeitos incríveis",
-    description: "Swirl, degradê, camadas e profundidade.",
-  },
-  {
-    icon: <Gift className="w-6 h-6 text-primary" />,
-    title: "Inclusão de objetos",
-    description: "Flores, fotos, glitter, madeira e mini elementos dentro da resina.",
-  },
+];
+
+const moldesImages = [
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6818535343675418.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2705850893593683.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.9088450495087108.png",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5747916272894782.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6325262814348592.png",
 ];
 
 const learnItemsPart3 = [
+    {
+        icon: <Sparkles className="w-6 h-6 text-primary" />,
+        title: "Efeitos incríveis",
+        description: "Swirl, degradê, camadas e profundidade.",
+    },
+    {
+        icon: <Gift className="w-6 h-6 text-primary" />,
+        title: "Inclusão de objetos",
+        description: "Flores, fotos, glitter, madeira e mini elementos dentro da resina.",
+    },
     {
         icon: <Star className="w-6 h-6 text-primary" />,
         title: "Desmoldar corretamente",
@@ -104,43 +112,44 @@ export const WhatYouWillLearn = () => {
             </div>
           ))}
         </div>
-
+        
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           <div className="space-y-6">
-            {learnItemsPart2.slice(0, 3).map((item, index) => (
+            {learnItemsPart2.map((item, index) => (
                 <div key={index} className="flex items-start space-x-4">
-                <div className="flex-shrink-0">{item.icon}</div>
-                <div>
-                    <h3 className="font-bold text-lg">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                </div>
+                  <div className="flex-shrink-0">{item.icon}</div>
+                  <div>
+                      <h3 className="font-bold text-lg">{item.title}</h3>
+                      <p className="text-gray-600">{item.description}</p>
+                  </div>
                 </div>
             ))}
-             <div className="rounded-lg overflow-hidden">
-                <Image
-                    src="https://storage.googleapis.com/stablediffusion-38ba3.appspot.com/4a0344d2-d790-482a-9e11-e403487c53d1.jpeg"
-                    alt="Pingente de resina e madeira"
-                    width={400}
-                    height={400}
-                    className="w-full h-auto object-cover"
-                    data-ai-hint="resin pendant"
-                />
+            <div className="grid grid-cols-2 gap-4">
+                {moldesImages.map((src, index) => (
+                    <Image
+                        key={index}
+                        src={src}
+                        alt={`Molde de resina ${index + 1}`}
+                        width={250}
+                        height={250}
+                        className="rounded-lg object-cover aspect-square"
+                    />
+                ))}
             </div>
           </div>
-          <div className="space-y-6">
-            {learnItemsPart2.slice(3).map((item, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                <div className="flex-shrink-0">{item.icon}</div>
-                <div>
-                    <h3 className="font-bold text-lg">{item.title}</h3>
-                    <p className="text-gray-600">{item.description}</p>
-                </div>
-                </div>
-            ))}
+          <div className="rounded-lg overflow-hidden">
+              <Image
+                  src="https://storage.googleapis.com/stablediffusion-38ba3.appspot.com/4a0344d2-d790-482a-9e11-e403487c53d1.jpeg"
+                  alt="Pingente de resina e madeira"
+                  width={600}
+                  height={800}
+                  className="w-full h-full object-cover"
+                  data-ai-hint="resin pendant"
+              />
           </div>
         </div>
-
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+        
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
           {learnItemsPart3.map((item, index) => (
             <div key={index} className="flex items-start space-x-4">
               <div className="flex-shrink-0">{item.icon}</div>

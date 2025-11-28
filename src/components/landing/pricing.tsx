@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Check, Lock } from 'lucide-react';
+import { Lock } from 'lucide-react';
 import Image from 'next/image';
 
 const CountdownTimer = () => {
@@ -63,8 +63,17 @@ export const Pricing = () => {
             </p>
         </div>
 
-        <div className="mt-10 max-w-md mx-auto bg-white rounded-2xl shadow-2xl border-2 border-primary overflow-hidden">
-            <div className="p-8">
+        <div 
+            className="mt-10 max-w-md mx-auto bg-white rounded-2xl shadow-2xl border-2 border-primary overflow-hidden relative"
+        >
+            <Image
+                src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8006452504769752.png"
+                alt="fundo da oferta"
+                layout="fill"
+                objectFit="cover"
+                className="opacity-10"
+            />
+            <div className="p-8 relative">
                 <p className="font-bold text-gray-500">📦 O QUE VOCÊ VAI RECEBER?</p>
                 <p className="mt-4 text-gray-500 line-through text-2xl">Todo esse conteúdo somaria: R$ 279,00</p>
                 <p className="mt-2 text-sm font-bold uppercase text-primary">🎉 VALOR ESPECIAL, SOMENTE HOJE:</p>
@@ -88,7 +97,7 @@ export const Pricing = () => {
                     <span>🌎 DISPONÍVEL PARA TODO O BRASIL</span>
                 </div>
             </div>
-             <div className="bg-gray-100 p-6">
+             <div className="bg-gray-100/80 p-6 relative">
                 <CountdownTimer />
             </div>
         </div>

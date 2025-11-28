@@ -1,5 +1,5 @@
 "use client";
-import { CheckCircle2 } from "lucide-react";
+import { CheckCircle } from "lucide-react";
 import React from "react";
 import Image from "next/image";
 
@@ -15,6 +15,15 @@ const benefits = [
     { title: "Acesso imediato e vitalício", description: "Entre agora e comece a aprender hoje mesmo." },
 ];
 
+const benefitImages = [
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5872215207087303.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.1951684280195365.png",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5111575120561582.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.862953732043286.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6269668836051501.jpg",
+    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.90968985320192.jpg",
+];
+
 
 export const Benefits = () => {
     return (
@@ -25,19 +34,22 @@ export const Benefits = () => {
                         🌟 Benefícios do Curso
                     </h2>
                 </div>
-                 <div className="mt-12 flex justify-center">
-                    <Image 
-                        src="https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.029067124058376304.jpg&w=2048&q=75"
-                        alt="Benefícios do curso"
-                        width={800}
-                        height={450}
-                        className="rounded-lg shadow-lg"
-                    />
+                 <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {benefitImages.map((src, index) => (
+                        <Image 
+                            key={index}
+                            src={src}
+                            alt={`Exemplo de peça de resina ${index + 1}`}
+                            width={400}
+                            height={400}
+                            className="rounded-lg shadow-lg object-cover aspect-square"
+                        />
+                    ))}
                 </div>
                 <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {benefits.map((benefit, index) => (
                         <div key={index} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                            <CheckCircle2 className="w-8 h-8 text-green-500 mb-4" />
+                            <CheckCircle className="w-8 h-8 text-green-500 mb-4" />
                             <h3 className="font-bold text-xl text-gray-800">{benefit.title}</h3>
                             <p className="mt-2 text-gray-600">{benefit.description}</p>
                         </div>
