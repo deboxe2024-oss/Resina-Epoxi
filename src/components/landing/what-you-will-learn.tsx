@@ -21,21 +21,6 @@ const learnItemsPart1 = [
   },
 ];
 
-const images1 = [
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.6787677202376466.jpg&w=2048&q=75",
-        alt: "Resin art necklaces"
-    },
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.14428733524604598.jpg&w=2048&q=75",
-        alt: "Resin art lamp"
-    },
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.4228239060173956.jpg&w=2048&q=75",
-        alt: "Resin art keychains"
-    }
-]
-
 const learnItemsPart2 = [
   {
     icon: <Palette className="w-6 h-6 text-primary" />,
@@ -63,21 +48,6 @@ const learnItemsPart2 = [
     description: "Flores, fotos, glitter, madeira e mini elementos dentro da resina.",
   },
 ];
-
-const images2 = [
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9469273642130308.jpg&w=2048&q=75",
-        alt: "Resin art lamp with flowers"
-    },
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.5062421864143695.jpg&w=2048&q=75",
-        alt: "Blue and white resin geode art"
-    },
-    {
-        src: "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.02168658949314306.jpg&w=2048&q=75",
-        alt: "Resin pendant with wolf silhouette"
-    }
-]
 
 const learnItemsPart3 = [
     {
@@ -135,20 +105,6 @@ export const WhatYouWillLearn = () => {
           ))}
         </div>
 
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {images1.map((image, index) => (
-                <div key={index} className="rounded-lg overflow-hidden">
-                    <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={400}
-                        height={400}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-            ))}
-        </div>
-
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
           <div className="space-y-6">
             {learnItemsPart2.slice(0, 3).map((item, index) => (
@@ -160,6 +116,16 @@ export const WhatYouWillLearn = () => {
                 </div>
                 </div>
             ))}
+             <div className="rounded-lg overflow-hidden">
+                <Image
+                    src="https://storage.googleapis.com/stablediffusion-38ba3.appspot.com/4a0344d2-d790-482a-9e11-e403487c53d1.jpeg"
+                    alt="Pingente de resina e madeira"
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover"
+                    data-ai-hint="resin pendant"
+                />
+            </div>
           </div>
           <div className="space-y-6">
             {learnItemsPart2.slice(3).map((item, index) => (
@@ -172,20 +138,6 @@ export const WhatYouWillLearn = () => {
                 </div>
             ))}
           </div>
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {images2.map((image, index) => (
-                <div key={index} className="rounded-lg overflow-hidden">
-                    <Image
-                        src={image.src}
-                        alt={image.alt}
-                        width={400}
-                        height={400}
-                        className="w-full h-full object-cover"
-                    />
-                </div>
-            ))}
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">

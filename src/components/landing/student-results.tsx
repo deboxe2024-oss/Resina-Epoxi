@@ -49,6 +49,12 @@ const students = [
     description: 'Resultado de alto nível! Ela fez essa mesa sob encomenda para seu ex-chefe e pediu demissão após a metade do curso. Hoje, tem mais de 20 vendas mensais, o triplo do seu antigo salário.',
     videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.16781002622817653.mp4',
   },
+  {
+    name: 'Rafael Medeiros',
+    time: 'Conclusão do curso',
+    description: 'Resultado de conclusão de curso. Essa resina foi feita em uma parede por nosso Aluno Rafael Medeiros.',
+    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.13282398440855303.mp4',
+  },
 ];
 
 export const StudentResults = () => {
@@ -60,7 +66,7 @@ export const StudentResults = () => {
             ⭐ Resultados de Nossos Alunos
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Veja o que nossas alunas criaram com o conhecimento do curso. Resultados incríveis em pouco tempo!
+            Veja o que nossos alunos criaram com o conhecimento do curso. Resultados incríveis em pouco tempo!
           </p>
         </div>
 
@@ -69,7 +75,7 @@ export const StudentResults = () => {
             <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-0">
                 <div className="w-full">
-                  <video src={student.videoSrc} controls className="w-full" />
+                  <video src={student.videoSrc} controls className="w-full h-auto" />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800">{student.name}</h3>
