@@ -1,33 +1,39 @@
 import React from 'react';
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const guaranteeSeal = PlaceHolderImages.find(img => img.id === 'guarantee-seal');
+import { Button } from '@/components/ui/button';
 
 export const Guarantee = () => {
   return (
-    <section id="guarantee" className="py-20 sm:py-28 bg-secondary/30">
-      <div className="container">
-        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
-          {guaranteeSeal && (
-            <div className="flex-shrink-0">
-              <Image
-                src={guaranteeSeal.imageUrl}
-                alt={guaranteeSeal.description}
-                data-ai-hint={guaranteeSeal.imageHint}
-                width={250}
-                height={250}
-                className="object-contain"
-              />
-            </div>
-          )}
-          <div className="max-w-xl text-center lg:text-left">
-            <h2 id="guarantee-heading" className="font-headline text-3xl sm:text-4xl font-bold text-foreground">
-              Risco Zero Para Você!
+    <section id="guarantee" className="py-16 sm:py-24 bg-gray-900 text-white">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 text-center lg:text-left">
+          <div className="flex-shrink-0">
+            <Image
+              src="https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fselo-garantia.4f220d91.png&w=256&q=75"
+              alt="Selo de Garantia de 7 dias"
+              width={200}
+              height={200}
+              className="object-contain"
+            />
+          </div>
+          <div className="max-w-2xl">
+            <h2 id="guarantee-heading" className="text-3xl sm:text-4xl font-bold">
+              Garantia de 7 dias — risco zero!
             </h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Sua satisfação é nossa prioridade. Por isso, oferecemos uma garantia incondicional de 7 dias. Se por qualquer motivo você não gostar do conteúdo ou achar que o curso não é para você, basta nos enviar um único e-mail e devolveremos 100% do seu investimento. Sem perguntas, sem burocracia.
+            <p className="mt-4 text-lg text-gray-300">
+              Se você não gostar do curso, por qualquer motivo, basta nos enviar um e-mail dentro de 7 dias e devolvemos 100% do seu dinheiro. Sem perguntas, sem burocracia. O risco é todo nosso.
             </p>
+            <div className="mt-8">
+                <Button
+                asChild
+                size="lg"
+                className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                >
+                <a href="#pricing">
+                    QUERO ACESSAR AGORA
+                </a>
+                </Button>
+            </div>
           </div>
         </div>
       </div>

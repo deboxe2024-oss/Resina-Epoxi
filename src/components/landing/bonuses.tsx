@@ -1,54 +1,76 @@
 import React from 'react';
-import Image from 'next/image';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-import { Award, BookOpen, Calculator, Users } from 'lucide-react';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { List, DraftingCompass, Lamp, ClipboardCheck, Goal, Award } from 'lucide-react';
 
 const bonuses = [
-  { id: 'bonus-1', title: 'Guia de Fornecedores', description: 'Uma lista selecionada dos melhores e mais baratos fornecedores de resina e materiais.', icon: <BookOpen className="w-12 h-12 text-primary" /> },
-  { id: 'bonus-2', title: 'Planilha de Precificação', description: 'Calcule o preço de venda de suas peças de forma simples e garanta seu lucro.', icon: <Calculator className="w-12 h-12 text-primary" /> },
-  { id: 'bonus-3', title: 'Comunidade VIP de Alunos', description: 'Troque experiências, tire dúvidas e faça networking com outros artistas de resina.', icon: <Users className="w-12 h-12 text-primary" /> },
-  { id: 'bonus-4', title: 'Certificado de Conclusão', description: 'Receba um lindo certificado para comprovar sua nova habilidade e especialização.', icon: <Award className="w-12 h-12 text-primary" /> },
+  { 
+    icon: <List className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 1 — Lista de Fornecedores',
+    description: 'Descubra onde comprar resina, moldes e materiais com os melhores preços do Brasil.',
+    value: 47.00,
+  },
+  { 
+    icon: <DraftingCompass className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 2 — Moldes Caseiros de Silicone',
+    description: 'Aprenda a criar seus próprios moldes personalizados gastando quase nada.',
+    value: 39.00,
+  },
+  { 
+    icon: <Lamp className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 3 — Luminárias com Resina',
+    description: 'Passo a passo completo para criar luminárias modernas e muito valorizadas.',
+    value: 39.00,
+  },
+  { 
+    icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 4 — Checklist Completo de Trabalho',
+    description: 'Checklist para evitar erros, organizar sua produção e garantir melhores resultados.',
+    value: 29.00,
+  },
+  { 
+    icon: <Goal className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 5 — Guia de Estratégias de Vendas',
+    description: 'Aprenda onde vender, como precificar e como transformar suas peças em renda extra.',
+    value: 59.00,
+  },
+  { 
+    icon: <Award className="w-8 h-8 text-primary" />,
+    title: 'BÔNUS 6 — Certificado de Conclusão',
+    description: 'Receba um certificado oficial ao finalizar o curso, comprovando seu aprendizado e valorizando seu trabalho.',
+    value: 37.00,
+  },
 ];
 
 export const Bonuses = () => {
   return (
-    <section id="bonuses" className="py-20 sm:py-28 bg-background">
-      <div className="container">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 id="bonuses-heading" className="font-headline text-3xl sm:text-4xl font-bold text-primary">
-            E ainda tem mais... Bônus Exclusivos!
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Ao se inscrever hoje, você garante acesso imediato a estes bônus incríveis que vão acelerar seus resultados.
-          </p>
+    <section id="bonuses" className="py-16 sm:py-24 bg-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {bonuses.map((bonus, index) => (
+                <div key={index} className="flex flex-col text-center items-center p-4">
+                    <p className="font-bold text-gray-800">{bonus.title}</p>
+                    <p className="text-sm text-gray-600 mt-2">{bonus.description}</p>
+                    <p className="mt-2 text-gray-500 line-through">Valor: R$ {bonus.value.toFixed(2)}</p>
+                    <p className="font-bold text-primary">Só hoje: GRÁTIS</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="bg-primary text-white rounded-xl p-8 text-center shadow-lg">
+            <p className="font-semibold text-lg">🎉 TOTAL EM BÔNUS:</p>
+            <p className="text-5xl font-bold my-2">R$ 250.00</p>
+            <p className="text-lg font-semibold">💥 Você paga:</p>
+            <p className="text-6xl font-bold text-yellow-300 my-4">R$ 0</p>
+            <p className="bg-white text-primary font-bold rounded-full px-4 py-2 inline-block">Somente hoje</p>
+          </div>
         </div>
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {bonuses.map((bonus) => {
-            return (
-              <Card key={bonus.id} className="text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <CardHeader className="items-center">
-                  {bonus.icon}
-                  <CardTitle className="font-headline text-xl pt-4">{bonus.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-muted-foreground">{bonus.description}</p>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
-        <div className="mt-16 text-center">
-            <Button
-              asChild
-              size="lg"
-              className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <a href="#pricing">
-                QUERO GARANTIR MEU ACESSO COM BÔNUS
-              </a>
-            </Button>
+        <div className="mt-12 text-center">
+            <p className="text-xl font-bold text-gray-800" style={{ fontFamily: "'Poppins', sans-serif" }}>🔥 Oferta Disponível Apenas Hoje!</p>
+            <p className="mt-2 text-2xl md:text-3xl font-bold text-primary" style={{ fontFamily: "'Poppins', sans-serif" }}>
+                📘 Curso Resina Epóxi do Zero + 🎁 Todos os 6 Bônus Exclusivos GRÁTIS
+            </p>
         </div>
       </div>
     </section>

@@ -1,24 +1,27 @@
-import { Header } from '@/components/landing/header';
+import { Benefits } from '@/components/landing/benefits';
+import { Bonuses } from '@/components/landing/bonuses';
+import { Faq } from '@/components/landing/faq';
+import { Footer } from '@/components/landing/footer';
+import { Guarantee } from '@/components/landing/guarantee';
 import { Hero } from '@/components/landing/hero';
+import { Instructor } from '@/components/landing/instructor';
+import { Pricing } from '@/components/landing/pricing';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { WhatYouWillLearn } from '@/components/landing/what-you-will-learn';
-import { Testimonials } from '@/components/landing/testimonials';
-import { Bonuses } from '@/components/landing/bonuses';
-import { Pricing } from '@/components/landing/pricing';
-import { Guarantee } from '@/components/landing/guarantee';
-import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen bg-background text-foreground">
+    <div className="flex flex-col min-h-screen bg-white text-gray-800">
       <main>
         <Hero />
         <WhatYouWillLearn />
-        <TargetAudience />
+        <Benefits />
         <Bonuses />
-        <Testimonials />
         <Pricing />
         <Guarantee />
+        <TargetAudience />
+        <Instructor />
+        <Faq />
       </main>
       <Footer />
     </div>

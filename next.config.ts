@@ -28,6 +28,18 @@ const nextConfig: NextConfig = {
         port: '',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'resinaemcasa.netlify.app',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'nwuievvpcjrmecujwfox.supabase.co',
+        port: '',
+        pathname: '/**',
+      }
     ],
   },
 };

@@ -4,14 +4,10 @@ export const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 bg-background border-t">
-      <div className="container text-center text-muted-foreground">
+    <footer className="py-8 bg-gray-900 text-gray-400">
+      <div className="container text-center text-sm">
         <p>&copy; {currentYear} Resina Master. Todos os direitos reservados.</p>
-        <div className="mt-2 text-sm">
-          <a href="#" className="hover:text-primary transition-colors px-2">Política de Privacidade</a>
-          <span>&bull;</span>
-          <a href="#" className="hover:text-primary transition-colors px-2">Termos de Uso</a>
-        </div>
+        <p className="mt-2">Este site não é afiliado ao Facebook ou a qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site.</p>
       </div>
     </footer>
   );

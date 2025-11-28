@@ -1,74 +1,97 @@
-import React from 'react';
-import Image from 'next/image';
+"use client";
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
-import { Check, ShieldCheck } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+import { Check, Lock } from 'lucide-react';
+import Image from 'next/image';
 
-const paymentMethods = PlaceHolderImages.find(img => img.id === 'payment-methods');
+const CountdownTimer = () => {
+    const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 42, seconds: 58 });
 
-const features = [
-  "Acesso vitalício ao curso completo",
-  "Suporte individual via WhatsApp",
-  "Aulas 100% online para assistir quando quiser",
-  "Certificado de conclusão incluso",
-  "Todos os 4 bônus exclusivos",
-];
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setTimeLeft(prevTime => {
+                if (prevTime.seconds > 0) {
+                    return { ...prevTime, seconds: prevTime.seconds - 1 };
+                }
+                if (prevTime.minutes > 0) {
+                    return { ...prevTime, minutes: prevTime.minutes - 1, seconds: 59 };
+                }
+                if (prevTime.hours > 0) {
+                    return { hours: prevTime.hours - 1, minutes: 59, seconds: 59 };
+                }
+                return prevTime; // timer stops at 00:00:00
+            });
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }, []);
+    
+    const formatTime = (time: number) => time.toString().padStart(2, '0');
+
+    return (
+        <div className="text-center mt-8">
+            <p className="text-lg font-medium text-gray-700">⏳ Esta Oferta Finaliza Em:</p>
+            <div className="mt-2 text-4xl font-bold text-primary flex items-center justify-center space-x-2">
+                <div className="bg-white p-3 rounded-lg shadow-md">
+                    <span>{formatTime(timeLeft.hours)}</span>
+                    <p className="text-sm font-normal">Horas</p>
+                </div>
+                <span>:</span>
+                <div className="bg-white p-3 rounded-lg shadow-md">
+                    <span>{formatTime(timeLeft.minutes)}</span>
+                    <p className="text-sm font-normal">Minutos</p>
+                </div>
+                <span>:</span>
+                <div className="bg-white p-3 rounded-lg shadow-md">
+                    <span>{formatTime(timeLeft.seconds)}</span>
+                    <p className="text-sm font-normal">Segundos</p>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="py-20 sm:py-28 bg-background">
-      <div className="container flex flex-col items-center">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 id="pricing-heading" className="font-headline text-3xl sm:text-4xl font-bold text-primary">
-            Oferta Especial por Tempo Limitado
-          </h2>
+    <section id="pricing" className="py-16 sm:py-24 bg-gray-50">
+      <div className="container mx-auto px-4 text-center">
+        <div className="max-w-3xl mx-auto">
+            <h2 className="text-sm font-bold uppercase tracking-wider text-primary">⭐ Como acessar a promoção?</h2>
+            <p className="mt-4 text-lg text-gray-600">
+            Uma vez realizado o pagamento, você receberá acesso imediato ao curso completo + todos os bônus adicionais direto no seu e-mail. Você poderá assistir no celular, tablet ou computador, de onde quiser.
+            </p>
         </div>
-        
-        <Card className="mt-12 max-w-lg w-full shadow-2xl border-2 border-primary/50">
-          <CardHeader className="text-center bg-primary/10 p-6">
-            <CardDescription className="text-lg line-through">De R$ 297,00 por apenas</CardDescription>
-            <CardTitle className="text-5xl font-bold text-primary !mt-2">12x de R$ 9,74</CardTitle>
-            <p className="font-semibold text-lg">ou R$ 97,00 à vista</p>
-          </CardHeader>
-          <CardContent className="p-6 sm:p-8">
-            <ul className="space-y-4">
-              {features.map((feature, index) => (
-                <li key={index} className="flex items-start">
-                  <Check className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
-          </CardContent>
-          <CardFooter className="flex-col gap-4 px-6 sm:px-8 pb-8">
-            <Button
-              asChild
-              size="lg"
-              className="w-full h-14 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-            >
-              <a href="#">
-                QUERO APROVEITAR A OFERTA
-              </a>
-            </Button>
-            <div className="flex items-center text-sm text-muted-foreground">
-              <ShieldCheck className="w-4 h-4 mr-2 text-green-600"/>
-              <span>Compra 100% segura e protegida.</span>
+
+        <div className="mt-10 max-w-md mx-auto bg-white rounded-2xl shadow-2xl border-2 border-primary overflow-hidden">
+            <div className="p-8">
+                <p className="font-bold text-gray-500">📦 O QUE VOCÊ VAI RECEBER?</p>
+                <p className="mt-4 text-gray-500 line-through text-2xl">Todo esse conteúdo somaria: R$ 279,00</p>
+                <p className="mt-2 text-sm font-bold uppercase text-primary">🎉 VALOR ESPECIAL, SOMENTE HOJE:</p>
+                <p className="text-6xl md:text-7xl font-black text-primary my-2">
+                    ❤️ R$ 29,90
+                </p>
+
+                <Button
+                    asChild
+                    className="w-full h-14 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 mt-6"
+                >
+                    <a href="#">
+                        QUERO ACESSAR AGORA
+                    </a>
+                </Button>
+                <div className="mt-4 flex items-center justify-center text-sm text-gray-500">
+                    <Lock className="w-4 h-4 mr-2 text-green-600"/>
+                    <span>COMPRA 100% SEGURA</span>
+                </div>
+                 <div className="mt-2 flex items-center justify-center text-sm text-gray-500">
+                    <span>🌎 DISPONÍVEL PARA TODO O BRASIL</span>
+                </div>
             </div>
-            {paymentMethods && (
-              <div className="pt-4">
-                <Image
-                  src={paymentMethods.imageUrl}
-                  alt={paymentMethods.description}
-                  data-ai-hint={paymentMethods.imageHint}
-                  width={400}
-                  height={50}
-                  className="object-contain"
-                />
-              </div>
-            )}
-          </CardFooter>
-        </Card>
+             <div className="bg-gray-100 p-6">
+                <CountdownTimer />
+            </div>
+        </div>
       </div>
     </section>
   );
