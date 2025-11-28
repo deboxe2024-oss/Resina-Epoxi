@@ -68,7 +68,9 @@ export const StudentResults = () => {
           {students.map((student, index) => (
             <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
               <CardContent className="p-0">
-                <video src={student.videoSrc} controls className="w-full h-auto object-cover aspect-video" />
+                <div className="aspect-video w-full">
+                  <video src={student.videoSrc} controls className="w-full h-full object-cover" />
+                </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800">{student.name}</h3>
                   <p className="text-sm text-primary font-semibold mt-1">Resultado em {student.time}</p>
