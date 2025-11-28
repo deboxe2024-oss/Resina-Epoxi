@@ -1,40 +1,39 @@
 import React from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { List, DraftingCompass, Lamp, ClipboardCheck, Goal, Award } from 'lucide-react';
+import Image from 'next/image';
 
 const bonuses = [
   { 
-    icon: <List className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9681884163274108.png&w=640&q=75',
     title: 'BÔNUS 1 — Lista de Fornecedores',
     description: 'Descubra onde comprar resina, moldes e materiais com os melhores preços do Brasil.',
     value: 47.00,
   },
   { 
-    icon: <DraftingCompass className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.5409870164785451.png&w=640&q=75',
     title: 'BÔNUS 2 — Moldes Caseiros de Silicone',
     description: 'Aprenda a criar seus próprios moldes personalizados gastando quase nada.',
     value: 39.00,
   },
   { 
-    icon: <Lamp className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.6991364729469136.png&w=640&q=75',
     title: 'BÔNUS 3 — Luminárias com Resina',
     description: 'Passo a passo completo para criar luminárias modernas e muito valorizadas.',
     value: 39.00,
   },
   { 
-    icon: <ClipboardCheck className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.4464812910082867.png&w=640&q=75',
     title: 'BÔNUS 4 — Checklist Completo de Trabalho',
     description: 'Checklist para evitar erros, organizar sua produção e garantir melhores resultados.',
     value: 29.00,
   },
   { 
-    icon: <Goal className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.27787011845584453.png&w=640&q=75',
     title: 'BÔNUS 5 — Guia de Estratégias de Vendas',
     description: 'Aprenda onde vender, como precificar e como transformar suas peças em renda extra.',
     value: 59.00,
   },
   { 
-    icon: <Award className="w-8 h-8 text-primary" />,
+    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.7076374826659633.png&w=640&q=75',
     title: 'BÔNUS 6 — Certificado de Conclusão',
     description: 'Receba um certificado oficial ao finalizar o curso, comprovando seu aprendizado e valorizando seu trabalho.',
     value: 37.00,
@@ -50,6 +49,7 @@ export const Bonuses = () => {
              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
               {bonuses.map((bonus, index) => (
                 <div key={index} className="flex flex-col text-center items-center p-4">
+                    <Image src={bonus.imageUrl} alt={bonus.title} width={150} height={150} className="rounded-lg shadow-md mb-4" />
                     <p className="font-bold text-gray-800">{bonus.title}</p>
                     <p className="text-sm text-gray-600 mt-2">{bonus.description}</p>
                     <p className="mt-2 text-gray-500 line-through">Valor: R$ {bonus.value.toFixed(2)}</p>
@@ -71,6 +71,15 @@ export const Bonuses = () => {
             <p className="mt-2 text-2xl md:text-3xl font-bold text-primary" style={{ fontFamily: "'Poppins', sans-serif" }}>
                 📘 Curso Resina Epóxi do Zero + 🎁 Todos os 6 Bônus Exclusivos GRÁTIS
             </p>
+            <div className="mt-8 flex justify-center">
+                <Image 
+                    src="https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9400414610218671.png&w=828&q=75"
+                    alt="Oferta especial"
+                    width={600}
+                    height={300}
+                    className="rounded-lg shadow-lg"
+                />
+            </div>
         </div>
       </div>
     </section>

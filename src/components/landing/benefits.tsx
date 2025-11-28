@@ -1,6 +1,7 @@
 "use client";
 import { CheckCircle2 } from "lucide-react";
 import React from "react";
+import Image from "next/image";
 
 const benefits = [
     { title: "Aprenda rápido, mesmo começando do zero", description: "Aulas simples, práticas e 100% em vídeo." },
@@ -23,6 +24,15 @@ export const Benefits = () => {
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
                         🌟 Benefícios do Curso
                     </h2>
+                </div>
+                 <div className="mt-12 flex justify-center">
+                    <Image 
+                        src="https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.029067124058376304.jpg&w=2048&q=75"
+                        alt="Benefícios do curso"
+                        width={800}
+                        height={450}
+                        className="rounded-lg shadow-lg"
+                    />
                 </div>
                 <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {benefits.map((benefit, index) => (
