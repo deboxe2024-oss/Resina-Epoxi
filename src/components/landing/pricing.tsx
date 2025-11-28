@@ -77,9 +77,12 @@ export const Pricing = () => {
                 <p className="font-bold text-gray-500">📦 O QUE VOCÊ VAI RECEBER?</p>
                 <p className="mt-4 text-gray-500 line-through text-2xl">Todo esse conteúdo somaria: R$ 279,00</p>
                 <p className="mt-2 text-sm font-bold uppercase text-primary">🎉 VALOR ESPECIAL, SOMENTE HOJE:</p>
-                <p className="text-6xl md:text-7xl font-black text-primary my-2 flex items-center justify-center">
-                    <span className="text-5xl mr-2">❤️</span> R$ 29,90
-                </p>
+                <div className="my-2 flex items-center justify-center">
+                  <span className="text-6xl md:text-7xl">❤️</span>
+                  <p className="text-6xl md:text-7xl font-black text-primary">
+                     R$ 29,90
+                  </p>
+                </div>
                 <p className="text-gray-600 mt-4">
                     Aproveite esta oportunidade! Ao final da oferta, o valor retornará para R$ 279,00. Garanta agora o acesso completo com todas as aulas, bônus e certificado por um preço único.
                 </p>
