@@ -23,7 +23,7 @@ export const Hero = () => {
               src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.10367605469102437.mp4" 
               controls 
               className="w-full h-full object-cover"
-              poster="https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fplaceholder-video.9b244799.jpg&w=1920&q=75"
+              poster="https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.9400414610218671.png"
               >
                 Seu navegador não suporta o elemento de vídeo.
             </video>

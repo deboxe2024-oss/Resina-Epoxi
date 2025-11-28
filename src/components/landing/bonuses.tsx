@@ -3,37 +3,37 @@ import Image from 'next/image';
 
 const bonuses = [
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9681884163274108.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.9681884163274108.png',
     title: 'BÔNUS 1 — Lista de Fornecedores',
     description: 'Descubra onde comprar resina, moldes e materiais com os melhores preços do Brasil.',
     value: 47.00,
   },
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.5409870164785451.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.5409870164785451.png',
     title: 'BÔNUS 2 — Moldes Caseiros de Silicone',
     description: 'Aprenda a criar seus próprios moldes personalizados gastando quase nada.',
     value: 39.00,
   },
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.6991364729469136.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.6991364729469136.png',
     title: 'BÔNUS 3 — Luminárias com Resina',
     description: 'Passo a passo completo para criar luminárias modernas e muito valorizadas.',
     value: 39.00,
   },
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.4464812910082867.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.4464812910082867.png',
     title: 'BÔNUS 4 — Checklist Completo de Trabalho',
     description: 'Checklist para evitar erros, organizar sua produção e garantir melhores resultados.',
     value: 29.00,
   },
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.27787011845584453.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.27787011845584453.png',
     title: 'BÔNUS 5 — Guia de Estratégias de Vendas',
     description: 'Aprenda onde vender, como precificar e como transformar suas peças em renda extra.',
     value: 59.00,
   },
   { 
-    imageUrl: 'https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.7076374826659633.png&w=640&q=75',
+    imageUrl: 'https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.7076374826659633.png',
     title: 'BÔNUS 6 — Certificado de Conclusão',
     description: 'Receba um certificado oficial ao finalizar o curso, comprovando seu aprendizado e valorizando seu trabalho.',
     value: 37.00,
@@ -73,7 +73,7 @@ export const Bonuses = () => {
             </p>
             <div className="mt-8 flex justify-center">
                 <Image 
-                    src="https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9400414610218671.png&w=828&q=75"
+                    src="https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.9400414610218671.png"
                     alt="Oferta especial"
                     width={600}
                     height={300}

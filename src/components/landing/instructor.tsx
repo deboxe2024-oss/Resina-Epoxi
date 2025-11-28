@@ -8,7 +8,7 @@ export const Instructor = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12">
           <div className="w-full lg:w-1/3 flex justify-center">
             <Image
-              src="https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.4365205819350668.png&w=2048&q=75"
+              src="https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.4365205819350668.png"
               alt="Vanessa Carvalho, Instrutora"
               width={300}
               height={300}
