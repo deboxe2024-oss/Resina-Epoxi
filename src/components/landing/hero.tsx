@@ -1,11 +1,6 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { PlayCircle } from 'lucide-react';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
-
-const heroBg = PlaceHolderImages.find(img => img.id === 'hero-background');
-const videoPlaceholder = PlaceHolderImages.find(img => img.id === 'video-placeholder');
+import { Check } from 'lucide-react';
 
 const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
   <svg {...props} fill="currentColor" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -17,55 +12,57 @@ const WhatsAppIcon = (props: React.SVGProps<SVGSVGElement>) => (
 
 export const Hero = () => {
   return (
-    <section id="hero" className="relative w-full min-h-[90vh] flex items-center justify-center text-center text-white py-20">
-      {heroBg && (
-        <Image
-          src={heroBg.imageUrl}
-          alt={heroBg.description}
-          data-ai-hint={heroBg.imageHint}
-          fill
-          className="object-cover"
-          priority
-        />
-      )}
-      <div className="absolute inset-0 bg-black/50" />
-      <div className="relative container z-10 flex flex-col items-center gap-8">
+    <section id="hero" className="relative w-full bg-background flex items-center justify-center text-center text-foreground py-20">
+      <div className="relative container z-10 flex flex-col items-center gap-6">
         <div className="max-w-4xl">
-          <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-shadow">
-            Aprenda a fazer Artes com Resina Epóxi e Crie Peças Incríveis
+          <p className="font-bold text-primary mb-2">OFERTA DE LANÇAMENTO</p>
+          <h1 className="font-headline text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
+            Aprenda Resina Epóxi do Zero e Crie Peças Lindas Para Vender
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-shadow-sm">
-            Descubra o passo a passo para se tornar um(a) mestre na arte com resina e transforme seu talento em um negócio lucrativo.
+          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-muted-foreground">
+            — Mesmo Sem Nenhuma Experiência ou Muito Dinheiro Para Investir
           </p>
         </div>
         
-        {videoPlaceholder && (
-          <Card className="max-w-3xl w-full overflow-hidden shadow-2xl border-2 border-white/20 bg-black/20 backdrop-blur-sm">
-            <CardContent className="p-0 relative aspect-video">
-              <Image
-                src={videoPlaceholder.imageUrl}
-                alt={videoPlaceholder.description}
-                data-ai-hint={videoPlaceholder.imageHint}
-                fill
-                className="object-cover"
-              />
-              <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                <PlayCircle className="w-20 h-20 text-white/80 hover:text-white transition-colors cursor-pointer" />
-              </div>
-            </CardContent>
-          </Card>
-        )}
+        <Card className="max-w-3xl w-full overflow-hidden shadow-2xl border-2 border-primary/20 bg-black/20 backdrop-blur-sm">
+          <CardContent className="p-0 relative aspect-video">
+            <video 
+              src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.10367605469102437.mp4" 
+              controls 
+              className="w-full h-full object-cover"
+              poster="/placeholder-video.jpg"
+              >
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+          </CardContent>
+        </Card>
         
+        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center justify-center text-muted-foreground">
+          <div className="flex items-center gap-2">
+            <Check className="w-5 h-5 text-primary"/>
+            <span>Técnicas do Zero ao Avançado</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Check className="w-5 h-5 text-primary"/>
+            <span>Aulas 100% Práticas</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <Check className="w-5 h-5 text-primary"/>
+            <span>Acesso Vitalício</span>
+          </div>
+        </div>
+
         <Button
           asChild
           size="lg"
-          className="h-16 px-10 text-xl font-bold bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
+          className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground rounded-full shadow-lg transform hover:scale-105 transition-transform duration-300"
         >
           <a href="#pricing">
-            <WhatsAppIcon className="w-6 h-6 mr-3" />
-            QUERO APRENDER AGORA
+            QUERO GARANTIR MINHA VAGA
           </a>
         </Button>
+
+        <p className="text-muted-foreground">✨ + de 3.000 alunas satisfeitas</p>
       </div>
     </section>
   );
