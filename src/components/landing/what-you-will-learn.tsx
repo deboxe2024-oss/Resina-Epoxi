@@ -113,40 +113,32 @@ export const WhatYouWillLearn = () => {
           ))}
         </div>
         
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-          <div className="space-y-6">
-            {learnItemsPart2.map((item, index) => (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="flex-shrink-0">{item.icon}</div>
-                  <div>
-                      <h3 className="font-bold text-lg">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
-                  </div>
-                </div>
-            ))}
-            <div className="grid grid-cols-2 gap-4">
-                {moldesImages.map((src, index) => (
-                    <Image
-                        key={index}
-                        src={src}
-                        alt={`Molde de resina ${index + 1}`}
-                        width={250}
-                        height={250}
-                        className="rounded-lg object-cover aspect-square"
-                    />
+        <div className="mt-12">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div className="space-y-6">
+                {learnItemsPart2.map((item, index) => (
+                    <div key={index} className="flex items-start space-x-4">
+                      <div className="flex-shrink-0">{item.icon}</div>
+                      <div>
+                          <h3 className="font-bold text-lg">{item.title}</h3>
+                          <p className="text-gray-600">{item.description}</p>
+                      </div>
+                    </div>
                 ))}
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {moldesImages.slice(0, 6).map((src, index) => (
+                      <Image
+                          key={index}
+                          src={src}
+                          alt={`Molde de resina ${index + 1}`}
+                          width={250}
+                          height={250}
+                          className="rounded-lg object-cover aspect-square shadow-lg"
+                      />
+                  ))}
+              </div>
             </div>
-          </div>
-          <div className="rounded-lg overflow-hidden">
-              <Image
-                  src="https://storage.googleapis.com/stablediffusion-38ba3.appspot.com/4a0344d2-d790-482a-9e11-e403487c53d1.jpeg"
-                  alt="Pingente de resina e madeira"
-                  width={600}
-                  height={800}
-                  className="w-full h-full object-cover"
-                  data-ai-hint="resin pendant"
-              />
-          </div>
         </div>
         
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">

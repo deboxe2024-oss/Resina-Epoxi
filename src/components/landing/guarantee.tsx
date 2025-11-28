@@ -27,7 +27,7 @@ export const Guarantee = () => {
                 <Button
                 asChild
                 size="lg"
-                className="h-14 px-8 text-lg font-bold bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+                className="h-14 px-8 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                 <a href="#pricing">
                     QUERO ACESSAR AGORA
