@@ -78,7 +78,6 @@ export const Pricing = () => {
                 <p className="mt-4 text-gray-500 line-through text-2xl">Todo esse conteúdo somaria: R$ 279,00</p>
                 <p className="mt-2 text-sm font-bold uppercase text-primary">🎉 VALOR ESPECIAL, SOMENTE HOJE:</p>
                 <div className="my-2 flex items-center justify-center">
-                  <span className="text-6xl md:text-7xl">❤️</span>
                   <p className="text-6xl md:text-7xl font-black text-primary">
                      R$ 29,90
                   </p>
