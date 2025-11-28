@@ -1,3 +1,88 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A background image showing a resin art workshop.",
+      "imageUrl": "https://images.unsplash.com/photo-1641893979088-87d4d9604c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpbiUyMGFydCUyMHdvcmtzaG9wfGVufDB8fHx8MTc2NDM0NDcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin art workshop"
+    },
+    {
+      "id": "video-placeholder",
+      "description": "A placeholder image for the course video, showing a finished piece of resin artwork.",
+      "imageUrl": "https://images.unsplash.com/photo-1603739592262-e66a6708e141?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxyZXNpbiUyMGFydHdvcmt8ZW58MHx8fHwxNzY0MzQ0NzI2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin artwork"
+    },
+    {
+      "id": "learn-1",
+      "description": "Image for 'Introduction to Resin' showing various resin supplies.",
+      "imageUrl": "https://images.unsplash.com/photo-1732360106288-19ce099b2cbd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmVzaW4lMjBzdXBwbGllc3xlbnwwfHx8fDE3NjQzNDQ3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin supplies"
+    },
+    {
+      "id": "learn-2",
+      "description": "Image for 'Pigmentation Techniques' showing colorful resin.",
+      "imageUrl": "https://images.unsplash.com/photo-1654143926914-c590d1bd7f38?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjb2xvcmZ1bCUyMHJlc2lufGVufDB8fHx8MTc2NDM0NDcyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "colorful resin"
+    },
+    {
+      "id": "learn-3",
+      "description": "Image for 'Mold Creation' showing various silicone molds.",
+      "imageUrl": "https://images.unsplash.com/photo-1736884721291-f688fcec1bf0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxzaWxpY29uZSUyMG1vbGRzfGVufDB8fHx8MTc2NDM0NDcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "silicone molds"
+    },
+    {
+      "id": "learn-4",
+      "description": "Image for 'Decorative Pieces' showing finished resin coasters.",
+      "imageUrl": "https://images.unsplash.com/photo-1749140945460-1d4bcf518c7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxyZXNpbiUyMGNvYXN0ZXJzfGVufDB8fHx8MTc2NDM0NDcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin coasters"
+    },
+    {
+      "id": "learn-5",
+      "description": "Image for 'Resin Jewelry' showing various pieces of resin jewelry.",
+      "imageUrl": "https://images.unsplash.com/photo-1679499774680-a6e5c947e805?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cmVzaW4lMjBqZXdlbHJ5fGVufDB8fHx8MTc2NDM0NDcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "resin jewelry"
+    },
+    {
+      "id": "learn-6",
+      "description": "Image for 'Finishing and Polishing' showing someone polishing a resin piece.",
+      "imageUrl": "https://images.unsplash.com/photo-1663782463991-17b45e3bca07?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwb2xpc2hpbmclMjByZXNpbnxlbnwwfHx8fDE3NjQzNDQ3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "polishing resin"
+    },
+    {
+      "id": "bonus-1",
+      "description": "Image for 'Supplier Guide' bonus.",
+      "imageUrl": "https://picsum.photos/seed/109/400/300",
+      "imageHint": "supplier list"
+    },
+    {
+      "id": "bonus-2",
+      "description": "Image for 'Pricing Spreadsheet' bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1716878906849-17ed9e9e6186?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwcmljaW5nJTIwY2FsY3VsYXRvcnxlbnwwfHx8fDE3NjQzNDQ3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "pricing calculator"
+    },
+    {
+      "id": "bonus-3",
+      "description": "Image for 'VIP Community' bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvbmxpbmUlMjBjb21tdW5pdHl8ZW58MHx8fHwxNzY0MjY1MDAzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online community"
+    },
+    {
+      "id": "bonus-4",
+      "description": "Image for 'Certificate of Completion' bonus.",
+      "imageUrl": "https://images.unsplash.com/photo-1742415888265-d5044039d8e6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhcnQlMjBjZXJ0aWZpY2F0ZXxlbnwwfHx8fDE3NjQzNDQ3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "art certificate"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "A seal for the 7-day money-back guarantee.",
+      "imageUrl": "https://images.unsplash.com/photo-1559157694-0fb6ac91407c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxndWFyYW50ZWUlMjBzZWFsfGVufDB8fHx8MTc2NDI4MDMyNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "guarantee seal"
+    },
+    {
+      "id": "payment-methods",
+      "description": "An image showing various accepted payment method logos.",
+      "imageUrl": "https://images.unsplash.com/photo-1726064855836-6042eb0bc5da?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwYXltZW50JTIwbWV0aG9kc3xlbnwwfHx8fDE3NjQzNDQ3MjZ8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "payment methods"
+    }
+  ]
 }
