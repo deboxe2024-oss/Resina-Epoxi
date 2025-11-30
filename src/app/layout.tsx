@@ -19,14 +19,18 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+      </head>
+      <body className="font-sans antialiased">
         <Script
+          id="utmify-utms"
           src="https://cdn.utmify.com.br/scripts/utms/latest.js"
           data-utmify-prevent-xcod-sck
           data-utmify-prevent-subids
-          async
-          defer
+          strategy="afterInteractive"
         />
-        <script
+        <Script
+          id="utmify-pixel"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               window.pixelId = "692a3401fa4370be9679239f";
@@ -38,7 +42,9 @@ export default function RootLayout({
             `,
           }}
         />
-        <script
+        <Script
+          id="fb-pixel"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               !function(f,b,e,v,n,t,s)
@@ -59,8 +65,6 @@ export default function RootLayout({
           src="https://www.facebook.com/tr?id=689670297299694&ev=PageView&noscript=1"
           />
         </noscript>
-      </head>
-      <body className="font-sans antialiased">
         {children}
         <Toaster />
       </body>
