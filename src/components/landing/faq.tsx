@@ -28,7 +28,7 @@ const faqItems = [
   },
   {
     question: "Qual é o preço?",
-    answer: "O curso completo com todos os bônus está com uma oferta especial de lançamento por apenas R$ 29,90. Este é um pagamento único, sem mensalidades."
+    answer: "O curso completo com todos os bônus está com uma oferta especial de lançamento por apenas R$ 39,90. Este é um pagamento único, sem mensalidades."
   }
 ];
 
