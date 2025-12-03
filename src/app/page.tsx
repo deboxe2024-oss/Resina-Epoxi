@@ -9,6 +9,7 @@ import { Pricing } from '@/components/landing/pricing';
 import { StudentResults } from '@/components/landing/student-results';
 import { TargetAudience } from '@/components/landing/target-audience';
 import { WhatYouWillLearn } from '@/components/landing/what-you-will-learn';
+import { WhyBuyToday } from '@/components/landing/why-buy-today';
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <WhatYouWillLearn />
         <Benefits />
         <Bonuses />
+        <WhyBuyToday />
         <Pricing />
         <Guarantee />
         <TargetAudience />
