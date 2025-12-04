@@ -1,5 +1,4 @@
 "use client";
-import { handlePurchase } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 
 export const WhyBuyToday = () => {
@@ -52,7 +51,6 @@ export const WhyBuyToday = () => {
           <Button
             asChild
             size="lg"
-            onClick={handlePurchase}
             className="bg-green-500 hover:bg-green-600 h-auto py-4 px-10 text-xl font-extrabold rounded-lg text-white"
           >
             <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">QUERO COMEÇAR AGORA</a>

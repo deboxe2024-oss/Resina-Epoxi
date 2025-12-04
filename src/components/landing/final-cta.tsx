@@ -1,7 +1,6 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { handlePurchase } from "@/lib/utils";
 
 export const FinalCta = () => {
   return (
@@ -15,7 +14,6 @@ export const FinalCta = () => {
       <Button
         asChild
         size="lg"
-        onClick={handlePurchase}
         className="bg-orange-500 hover:bg-orange-600 h-auto py-5 px-12 text-2xl font-black rounded-xl text-white"
       >
         <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">

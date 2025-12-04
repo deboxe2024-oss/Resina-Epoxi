@@ -2,7 +2,6 @@
 
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { handlePurchase } from "@/lib/utils";
 
 const testimonials = [
   {
@@ -64,7 +63,6 @@ export const Testimonials = () => {
           <Button
             asChild
             size="lg"
-            onClick={handlePurchase}
             className="bg-orange-500 hover:bg-orange-600 h-auto py-4 px-10 text-xl font-extrabold rounded-lg text-white"
           >
             <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">QUERO TER RESULTADOS COMO ESSAS ALUNAS</a>
