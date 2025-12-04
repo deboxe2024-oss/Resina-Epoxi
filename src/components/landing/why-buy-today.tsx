@@ -1,29 +1,62 @@
 "use client";
-
-import React from 'react';
+import { handlePurchase } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export const WhyBuyToday = () => {
   return (
-    <section className="py-16 sm:py-24">
-      <div className="container mx-auto px-4">
-        <div style={{background: '#fff5f5', borderLeft: '4px solid #ff0066', padding: '24px', margin: '20px 0', borderRadius: '12px'}}>
-          <h2 style={{marginBottom: '10px', color: '#b60033', fontFamily: "'Poppins', sans-serif"}} className="text-3xl font-bold">🔥 Por que Comprar Hoje?</h2>
-          <p style={{marginBottom: '10px'}} className="text-gray-700">
-            Se você está aqui agora, não é por acaso. Você já demonstrou interesse em aprender resina,
-            criar peças lindas e talvez até transformar isso em uma renda extra. O que separa quem começa
-            dos que continuam apenas assistindo vídeos é a decisão de dar o primeiro passo.
-          </p>
-          <ul style={{marginLeft: '18px', lineHeight: 1.5}} className="space-y-2 text-gray-700 list-disc list-inside">
-            <li><b>O valor atual é promocional</b> — esta oferta pode voltar para R$ 399,90 a qualquer momento.</li>
-            <li><b>Os 6 bônus exclusivos</b> (fornecedores, moldes, luminárias, checklist, vendas e certificado)
-            podem ser removidos a qualquer hora.</li>
-            <li>Você economiza meses de tentativas erradas, materiais desperdiçados e frustração.</li>
-            <li>Começa hoje mesmo, sem depender de ninguém e sem precisar de experiência.</li>
-            <li>Quanto antes você começar, mais rápido terá peças prontas para <b>vender e lucrar.</b></li>
-          </ul>
-          <p style={{marginTop: '12px', fontWeight: 'bold', color: '#b60033'}} className="text-lg">
-            Adiar pode custar mais caro. Aproveite enquanto está aberto por esse valor.
-          </p>
+    <section className="py-10 px-5">
+      <div className="container mx-auto">
+        <h2 className="text-center text-3xl font-extrabold text-gray-900">
+          Por Que Comprar Agora?
+        </h2>
+
+        <ul className="max-w-3xl mx-auto mt-5 text-lg leading-relaxed space-y-2 text-left">
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">✔</span>
+            <span>
+              Você vai parar de desperdiçar resina tentando sozinho(a) sem
+              saber o que está fazendo.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">✔</span>
+            <span>
+              Vai economizar tempo aprendendo técnicas que funcionam de
+              verdade.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">✔</span>
+            <span>
+              Vai começar a produzir peças lindas que vendem — mesmo sendo
+              iniciante.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">✔</span>
+            <span>
+              Vai poder faturar R$ 300 a R$ 1.200 por mês apenas com encomendas
+              simples.
+            </span>
+          </li>
+          <li className="flex items-start">
+            <span className="text-green-500 mr-2">✔</span>
+            <span>
+              Vai ter acesso a um método testado que evita erros e acelera
+              resultados.
+            </span>
+          </li>
+        </ul>
+
+        <div className="text-center mt-8">
+          <Button
+            asChild
+            size="lg"
+            onClick={handlePurchase}
+            className="bg-green-500 hover:bg-green-600 h-auto py-4 px-10 text-xl font-extrabold rounded-lg text-white"
+          >
+            <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">QUERO COMEÇAR AGORA</a>
+          </Button>
         </div>
       </div>
     </section>

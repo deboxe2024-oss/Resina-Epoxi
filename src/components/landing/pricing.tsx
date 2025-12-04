@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Lock } from 'lucide-react';
 import Image from 'next/image';
+import { handlePurchase } from '@/lib/utils';
 
 const CountdownTimer = () => {
     const [timeLeft, setTimeLeft] = useState({ hours: 23, minutes: 42, seconds: 58 });
@@ -69,9 +70,8 @@ export const Pricing = () => {
             <Image
                 src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8006452504769752.png"
                 alt="fundo da oferta"
-                layout="fill"
-                objectFit="cover"
-                className="opacity-10"
+                fill
+                className="opacity-10 object-cover"
             />
             <div className="p-8 relative">
                 <p className="font-bold text-gray-500">📦 O QUE VOCÊ VAI RECEBER?</p>
@@ -88,6 +88,7 @@ export const Pricing = () => {
 
                 <Button
                     asChild
+                    onClick={handlePurchase}
                     className="w-full h-14 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 mt-6"
                 >
                     <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">

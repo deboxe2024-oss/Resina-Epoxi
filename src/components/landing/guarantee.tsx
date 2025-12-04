@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { handlePurchase } from '@/lib/utils';
 
 export const Guarantee = () => {
   return (
@@ -28,6 +29,7 @@ export const Guarantee = () => {
                 <Button
                 asChild
                 size="lg"
+                onClick={handlePurchase}
                 className="h-14 px-8 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
                 >
                 <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">
