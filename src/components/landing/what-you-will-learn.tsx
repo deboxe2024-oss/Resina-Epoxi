@@ -1,156 +1,69 @@
 "use client";
 import React from 'react';
+import { Package, Leaf, Gem, Sparkles, DollarSign, Camera } from 'lucide-react';
 import Image from 'next/image';
-import { Bot, Package, Droplets, Palette, Zap, Gem, Sparkles, Gift, Star, DollarSign, Camera, BarChart } from 'lucide-react';
 
-const learnItemsPart1 = [
+const learnItems = [
   {
-    icon: <Bot className="w-6 h-6 text-primary" />,
-    title: "Começar do zero",
-    description: "Como usar resina epóxi mesmo sem experiência.",
+    icon: <Package className="w-8 h-8 text-rose-500" />,
+    title: "Materiais e Ferramentas",
+    description: "Lista completa do que você precisa para começar sem gastar muito.",
   },
   {
-    icon: <Package className="w-6 h-6 text-primary" />,
-    title: "Materiais certos",
-    description: "O que comprar, o que evitar e como montar seu mini ateliê gastando pouco.",
+    icon: <Leaf className="w-8 h-8 text-rose-500" />,
+    title: "Coleta e Preparação",
+    description: "Como selecionar, secar e preparar flores e folhas para encapsular.",
   },
   {
-    icon: <Droplets className="w-6 h-6 text-primary" />,
-    title: "Mistura perfeita",
-    description: "Proporção correta para evitar peças moles, pegajosas ou mal curadas.",
-  },
-];
-
-const learnItemsPart2 = [
-  {
-    icon: <Palette className="w-6 h-6 text-primary" />,
-    title: "Colorir a resina",
-    description: "Pigmentos, glitter e pós metálicos para criar cores lindas e profissionais.",
+    icon: <Gem className="w-8 h-8 text-rose-500" />,
+    title: "Técnicas de Resina",
+    description: "A mistura perfeita, como evitar bolhas e obter um acabamento cristalino.",
   },
   {
-    icon: <Zap className="w-6 h-6 text-primary" />,
-    title: "Zero bolhas",
-    description: "Técnicas simples para eliminar bolhas e deixar a peça lisa e cristalina.",
+    icon: <Sparkles className="w-8 h-8 text-rose-500" />,
+    title: "Montagem e Acabamento",
+    description: "Como transformar suas peças em brincos, colares e pingentes profissionais.",
   },
   {
-    icon: <Gem className="w-6 h-6 text-primary" />,
-    title: "Moldes sem danos",
-    description: "Como usar e conservar moldes sem rasgar ou grudar.",
+    icon: <DollarSign className="w-8 h-8 text-rose-500" />,
+    title: "Precificação e Vendas",
+    description: "Como calcular o valor das suas jóias e onde vender para lucrar.",
   },
-];
-
-const moldesImages = [
-    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6818535343675418.jpg",
-    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2705850893593683.jpg",
-    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.9088450495087108.png",
-    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5747916272894782.jpg",
-    "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6325262814348592.png",
-];
-
-const learnItemsPart3 = [
-    {
-        icon: <Sparkles className="w-6 h-6 text-primary" />,
-        title: "Efeitos incríveis",
-        description: "Swirl, degradê, camadas e profundidade.",
-    },
-    {
-        icon: <Gift className="w-6 h-6 text-primary" />,
-        title: "Inclusão de objetos",
-        description: "Flores, fotos, glitter, madeira e mini elementos dentro da resina.",
-    },
-    {
-        icon: <Star className="w-6 h-6 text-primary" />,
-        title: "Desmoldar corretamente",
-        description: "Como tirar as peças do molde sem quebrar ou arranhar."
-    },
-    {
-        icon: <Sparkles className="w-6 h-6 text-primary" />,
-        title: "Acabamento brilhante",
-        description: "Lixar, polir e selar para dar brilho de vidro."
-    },
-    {
-        icon: <Gem className="w-6 h-6 text-primary" />,
-        title: "Peças completas",
-        description: "Joias, chaveiros, porta-copos, luminárias, geodos e muito mais."
-    },
-     {
-        icon: <DollarSign className="w-6 h-6 text-primary" />,
-        title: "Economizar até 80%",
-        description: "Dicas para reduzir custo e aumentar o lucro nas vendas."
-    },
-    {
-        icon: <Camera className="w-6 h-6 text-primary" />,
-        title: "Fotografar para vender",
-        description: "Tire fotos lindas usando só o celular."
-    },
-    {
-        icon: <BarChart className="w-6 h-6 text-primary" />,
-        title: "Estratégias de venda",
-        description: "Onde vender, como precificar e transformar o hobby em renda extra."
-    },
+  {
+    icon: <Camera className="w-8 h-8 text-rose-500" />,
+    title: "Fotos que Vendem",
+    description: "Dicas para tirar fotos incríveis das suas peças usando apenas o seu celular.",
+  },
 ]
-
 
 export const WhatYouWillLearn = () => {
   return (
     <section id="learn" className="py-16 sm:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            O Que Você Vai Aprender
-          </h2>
-        </div>
-
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
-          {learnItemsPart1.map((item, index) => (
-            <div key={index} className="flex items-start space-x-4">
-              <div className="flex-shrink-0">{item.icon}</div>
-              <div>
-                <h3 className="font-bold text-lg">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="text-left">
+                <p className="font-bold text-rose-500">O QUE VOCÊ VAI APRENDER</p>
+                <h2 className="mt-2 text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
+                    O Passo a Passo Completo Para Criar Jóias Botânicas
+                </h2>
+                <div className="mt-8 space-y-6">
+                    {learnItems.map((item, index) => (
+                        <div key={index} className="flex items-start space-x-4">
+                            <div className="flex-shrink-0 bg-rose-100 rounded-full p-3">{item.icon}</div>
+                            <div>
+                                <h3 className="font-bold text-lg text-gray-800">{item.title}</h3>
+                                <p className="text-gray-600">{item.description}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
-          ))}
-        </div>
-        
-        <div className="mt-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-              <div className="space-y-6">
-                {learnItemsPart2.map((item, index) => (
-                    <div key={index} className="flex items-start space-x-4">
-                      <div className="flex-shrink-0">{item.icon}</div>
-                      <div>
-                          <h3 className="font-bold text-lg">{item.title}</h3>
-                          <p className="text-gray-600">{item.description}</p>
-                      </div>
-                    </div>
-                ))}
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-                  {moldesImages.slice(0, 6).map((src, index) => (
-                      <Image
-                          key={index}
-                          src={src}
-                          alt={`Molde de resina ${index + 1}`}
-                          width={250}
-                          height={250}
-                          className="rounded-lg object-cover aspect-square shadow-lg"
-                      />
-                  ))}
-              </div>
+            <div className="grid grid-cols-2 gap-4">
+                <Image src="https://joiasbotanicas.com.br/passo-a-passo/wp-content/uploads/2024/07/img1-1.png" alt="Jóia de resina 1" width={300} height={400} className="rounded-lg shadow-lg object-cover w-full h-full transform hover:scale-105 transition-transform" />
+                <Image src="https://joiasbotanicas.com.br/passo-a-passo/wp-content/uploads/2024/07/img2-1.png" alt="Jóia de resina 2" width={300} height={400} className="rounded-lg shadow-lg object-cover w-full h-full transform hover:scale-105 transition-transform" />
+                <Image src="https://joiasbotanicas.com.br/passo-a-passo/wp-content/uploads/2024/07/img3-1.png" alt="Jóia de resina 3" width={300} height={400} className="rounded-lg shadow-lg object-cover w-full h-full transform hover:scale-105 transition-transform" />
+                <Image src="https://joiasbotanicas.com.br/passo-a-passo/wp-content/uploads/2024/07/img4-1.png" alt="Jóia de resina 4" width={300} height={400} className="rounded-lg shadow-lg object-cover w-full h-full transform hover:scale-105 transition-transform" />
             </div>
-        </div>
-        
-        <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
-          {learnItemsPart3.map((item, index) => (
-            <div key={index} className="flex items-start space-x-4">
-              <div className="flex-shrink-0">{item.icon}</div>
-              <div>
-                <h3 className="font-bold text-lg">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
-              </div>
-            </div>
-          ))}
         </div>
       </div>
     </section>

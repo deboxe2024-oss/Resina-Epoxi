@@ -7,9 +7,8 @@ import { Hero } from '@/components/landing/hero';
 import { Instructor } from '@/components/landing/instructor';
 import { Pricing } from '@/components/landing/pricing';
 import { StudentResults } from '@/components/landing/student-results';
-import { TargetAudience } from '@/components/landing/target-audience';
 import { WhatYouWillLearn } from '@/components/landing/what-you-will-learn';
-import { WhyBuyToday } from '@/components/landing/why-buy-today';
+import { FinalCta } from '@/components/landing/final-cta';
 
 export default function Home() {
   return (
@@ -17,15 +16,14 @@ export default function Home() {
       <main>
         <Hero />
         <WhatYouWillLearn />
+        <StudentResults />
         <Benefits />
+        <Instructor />
         <Bonuses />
-        <WhyBuyToday />
         <Pricing />
         <Guarantee />
-        <TargetAudience />
-        <Instructor />
         <Faq />
-        <StudentResults />
+        <FinalCta />
       </main>
       <Footer />
     </div>

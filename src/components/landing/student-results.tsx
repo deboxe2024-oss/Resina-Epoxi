@@ -1,53 +1,21 @@
 import { Card, CardContent } from '@/components/ui/card';
+import Image from 'next/image';
 
 const students = [
   {
-    name: 'Mariana Silva',
-    time: 'menos de 10 dias',
-    description: 'Essa aluna fez uma incrível capinha de celular em resina, mostrando a rapidez com que se pode criar peças lindas.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6560235820404565.mp4',
+    name: 'Ana Clara',
+    imageSrc: 'https://images.unsplash.com/photo-1616091219469-640533905544?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpbiUyMGpld2Vscnl8ZW58MHx8fHwxNzIxOTM4NDg3fDA&ixlib=rb-4.0.3&q=80&w=400',
+    description: '“Nunca pensei que conseguiria fazer peças tão lindas! O curso é super didático, e em poucos dias já estava vendendo para as minhas amigas.”',
   },
   {
-    name: 'Juliana Costa',
-    time: 'menos de 10 dias',
-    description: 'Já essa aluna fez um relógio de parede para sua casa, um projeto prático e muito valorizado.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2960567343072176.mp4',
+    name: 'Mariana Pires',
+    imageSrc: 'https://images.unsplash.com/photo-1616091219416-e490593527a4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxyZXNpbiUyMGpld2Vscnl8ZW58MHx8fHwxNzIxOTM4NDg3fDA&ixlib=rb-4.0.3&q=80&w=400',
+    description: '“Estou apaixonada! O curso me deu a confiança que eu precisava para começar. Hoje, tenho uma lojinha online e meus finais de semana são produzindo jóias.”',
   },
   {
-    name: 'Beatriz Almeida',
-    time: 'menos de 10 dias',
-    description: 'Essa aluna também faz relógios, porém para venda sob encomenda, mostrando o potencial de negócio.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2777280647460657.mp4',
-  },
-  {
-    name: 'Camila Santos',
-    time: '1 mês de curso',
-    description: 'Nossa aluna mais antiga, com 1 mês de curso, já está faturando muito. Veja a quantidade de relógios que ela está fazendo com alta performance!',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.9340392398387358.mp4',
-  },
-   {
-    name: 'Fernanda Oliveira',
-    time: 'menos de 10 dias',
-    description: 'Essa aluna também está fazendo relógios, pois é simples e lucrativo. Você pode fazer o que quiser!',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.459569215635111.mp4',
-  },
-   {
-    name: 'Gabriela Pereira',
-    time: 'menos de 10 dias',
-    description: 'De capinhas a um lindo objeto de decoração como o que essa aluna fez.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5649383616062752.mp4',
-  },
-  {
-    name: 'Larissa Martins',
-    time: '35 dias',
-    description: 'No nível intermediário, essa aluna está fazendo mesas de decoração. Ela levou apenas 35 dias para dominar a arte e conseguir sua clientela.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.04027210476537424.mp4',
-  },
-   {
-    name: 'Sofia Ribeiro',
-    time: 'Conclusão do curso',
-    description: 'Resultado de alto nível! Ela fez essa mesa sob encomenda para seu ex-chefe e pediu demissão após a metade do curso. Hoje, tem mais de 20 vendas mensais, o triplo do seu antigo salário.',
-    videoSrc: 'https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.16781002622817653.mp4',
+    name: 'Sofia Andrade',
+    imageSrc: 'https://images.unsplash.com/photo-1599833692554-5481874554a7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxyZXNpbiUyMGpld2Vscnl8ZW58MHx8fHwxNzIxOTM4NDg3fDA&ixlib=rb-4.0.3&q=80&w=400',
+    description: '“O melhor investimento que fiz! A Fernanda ensina todos os segredos, e o grupo de alunas é incrível. Já recuperei o valor do curso várias vezes!”',
   },
 ];
 
@@ -56,25 +24,30 @@ export const StudentResults = () => {
     <section id="student-results" className="py-16 sm:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            ⭐ Resultados de Nossas Alunas
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 font-serif">
+            Veja o que as Alunas Estão Criando
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Veja o que nossos alunos criaram com o conhecimento do curso. Resultados incríveis em pouco tempo!
+            Pessoas comuns, assim como você, que decidiram dar o primeiro passo e hoje estão transformando a natureza em arte e renda.
           </p>
         </div>
 
         <div className="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {students.map((student, index) => (
-            <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300">
-              <CardContent className="p-0">
-                <div className="w-full">
-                  <video src={student.videoSrc} controls className="w-full h-auto" />
+            <Card key={index} className="overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+              <CardContent className="p-4">
+                <div className="w-full overflow-hidden rounded-lg">
+                  <Image 
+                    src={student.imageSrc} 
+                    alt={`Peça criada por ${student.name}`}
+                    width={400}
+                    height={400}
+                    className="w-full h-auto object-cover aspect-square group-hover:scale-105 transition-transform duration-300" 
+                  />
                 </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-800">{student.name}</h3>
-                  <p className="text-sm text-primary font-semibold mt-1">Resultado em {student.time}</p>
-                  <p className="mt-4 text-gray-600">{student.description}</p>
+                <div className="p-2 pt-4 text-center">
+                  <p className="mt-2 text-gray-600 italic">"{student.description}"</p>
+                  <h3 className="text-lg font-bold text-rose-500 mt-4">- {student.name}</h3>
                 </div>
               </CardContent>
             </Card>

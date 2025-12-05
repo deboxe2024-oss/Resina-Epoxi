@@ -3,23 +3,30 @@
 import { Button } from "@/components/ui/button";
 
 export const FinalCta = () => {
+  const handlePurchase = () => {
+    window.fbq?.('track', 'Purchase', {value: 97.00, currency: 'BRL'});
+  };
+
   return (
-    <section className="text-center py-12 px-5">
-      <h2 className="text-3xl font-extrabold text-gray-900">
-        Pronto(a) para transformar criatividade em renda?
-      </h2>
-      <p className="text-xl mt-2.5 mb-8 max-w-3xl mx-auto text-gray-600">
-        Clique abaixo e garanta seu acesso imediato ao curso enquanto ainda está no ar.
-      </p>
-      <Button
-        asChild
-        size="lg"
-        className="bg-orange-500 hover:bg-orange-600 h-auto py-5 px-12 text-2xl font-black rounded-xl text-white"
-      >
-        <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">
-            QUERO GARANTIR MINHA VAGA AGORA
-        </a>
-      </Button>
+    <section className="bg-rose-50/50 py-16 px-5 text-center">
+      <div className="container mx-auto max-w-2xl">
+        <h2 className="text-3xl font-bold font-serif text-gray-900">
+          Comece a Criar Suas Jóias Botânicas Ainda Hoje!
+        </h2>
+        <p className="text-xl mt-4 mb-8 text-gray-600">
+          Clique no botão abaixo e garanta sua vaga na condição especial de lançamento.
+        </p>
+        <Button
+          asChild
+          size="lg"
+          onClick={handlePurchase}
+          className="bg-rose-500 hover:bg-rose-600 h-auto py-5 px-12 text-xl font-bold rounded-lg text-white shadow-lg transform hover:scale-105 transition-transform"
+        >
+          <a href="https://pay.kiwify.com.br/gVbZ3iL">
+              QUERO TRANSFORMAR FOLHAS EM JÓIAS
+          </a>
+        </Button>
+      </div>
     </section>
   );
 };

@@ -1,74 +1,50 @@
 "use client";
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Check } from 'lucide-react';
 
 export const Hero = () => {
+    const handlePurchase = () => {
+        window.fbq?.('track', 'Purchase', {value: 97.00, currency: 'BRL'});
+    };
+
   return (
     <section id="hero" className="relative w-full bg-white flex items-center justify-center text-center text-gray-800 py-16 sm:py-24">
       <div className="relative container z-10 flex flex-col items-center gap-6 px-4">
         <div className="max-w-4xl">
-          <p className="font-bold text-primary mb-2 uppercase tracking-wider" style={{ fontFamily: "'Montserrat', sans-serif" }}>OFERTA DE LANÇAMENTO</p>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-gray-900" style={{ fontFamily: "'Montserrat', sans-serif" }}>
-            Aprenda Resina Epóxi do Zero e Crie Peças Lindas Para Vender
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight text-gray-900 font-serif">
+            Aprenda a Eternizar a Natureza em Jóias Únicas e Exclusivas!
           </h1>
-          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-600" style={{ fontFamily: "'Poppins', sans-serif" }}>
-            — Mesmo Sem Nenhuma Experiência ou Muito Dinheiro Para Investir
+          <p className="mt-4 text-lg md:text-xl max-w-2xl mx-auto text-gray-600">
+            Descubra o passo a passo para criar peças incríveis com flores e folhas naturais e transforme seu hobby em um negócio lucrativo, mesmo que você seja uma completa iniciante.
           </p>
         </div>
         
-        <Card className="max-w-3xl w-full overflow-hidden shadow-2xl border-2 border-primary/20 bg-black">
+        <Card className="max-w-4xl w-full overflow-hidden shadow-2xl border-2 border-rose-500/20 bg-black">
           <CardContent className="p-0 relative aspect-video">
             <video 
-              src="https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.10367605469102437.mp4" 
+              src="https://video.wixstatic.com/video/b56f8a_162383818e6946059437d97435f3590c/1080p/mp4/file.mp4" 
               controls 
               className="w-full h-full object-cover"
-              poster="https://kdloteojnkcjblhoirea.supabase.co/storage/v1/object/public/public-files/0.9400414610218671.png"
+              poster="https://joiasbotanicas.com.br/passo-a-passo/wp-content/uploads/2024/07/thumb-vsl.png"
               >
                 Seu navegador não suporta o elemento de vídeo.
             </video>
           </CardContent>
         </Card>
         
-        <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 items-center justify-center text-gray-600 font-medium">
-          <div className="flex items-center gap-2">
-            <Check className="w-5 h-5 text-green-500"/>
-            <span>Técnicas do Zero ao Avançado</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Check className="w-5 h-5 text-green-500"/>
-            <span>Aulas 100% Práticas</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Check className="w-5 h-5 text-green-500"/>
-            <span>Acesso Vitalício</span>
-          </div>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4">
+        <div className="flex flex-col items-center gap-4 mt-4">
           <Button
             asChild
             size="lg"
-            className="h-14 px-8 text-lg font-bold bg-green-500 hover:bg-green-600 text-white rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+            onClick={handlePurchase}
+            className="h-16 px-10 text-xl font-bold bg-rose-500 hover:bg-rose-600 text-white rounded-lg shadow-xl transform hover:scale-105 transition-transform duration-300 animate-pulse"
           >
-            <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">
-              QUERO GARANTIR MINHA VAGA
+            <a href="https://pay.kiwify.com.br/gVbZ3iL">
+              QUERO TRANSFORMAR FOLHAS EM JÓIAS
             </a>
           </Button>
-          <Button
-            asChild
-            size="lg"
-            variant="outline"
-            className="h-14 px-8 text-lg font-bold rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
-          >
-            <a href="#student-results">
-              Resultado de nossas Alunas
-            </a>
-          </Button>
+          <p className="text-gray-500 text-sm mt-2">Pagamento seguro | Acesso imediato</p>
         </div>
-
-
-        <p className="text-gray-600">✨ + de 3.000 alunas satisfeitas</p>
       </div>
     </section>
   );
