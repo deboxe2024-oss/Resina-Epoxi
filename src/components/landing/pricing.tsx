@@ -10,14 +10,17 @@ export const Pricing = () => {
 
         <div className="my-8">
             <p className="text-5xl lg:text-6xl font-black text-gray-800">12x de R$ 39,90</p>
-            <p className="text-2xl text-gray-600 mt-2">ou R$39,90 à vista</p>
+            <p className="text-2xl text-gray-600 mt-2">ou R$399,00 à vista</p>
         </div>
 
         <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-2xl py-8 px-12 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-          <a href="#">
+          <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">
             Quero me inscrever
           </a>
         </Button>
+        <p className="mt-4 text-red-600 font-semibold animate-pulse">
+            Esta oferta pode acabar a qualquer momento. Vagas limitadas (Apenas 500).
+        </p>
       </div>
     </section>
   );

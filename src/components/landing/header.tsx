@@ -1,28 +1,10 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { getImage } from '@/lib/placeholder-images';
-
-const Logo = () => {
-  const logoImage = getImage('amana-logo');
-  if (!logoImage) return null;
-  return (
-    <a href="/" className="font-serif text-2xl font-bold text-primary">
-      <Image
-        src={logoImage.imageUrl}
-        alt="Amana Ateliê Logo"
-        width={150}
-        height={40}
-        className="object-contain"
-      />
-    </a>
-  );
-};
 
 export const Header = () => {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center justify-between">
-        <Logo />
+        <div /> 
         <nav className="hidden md:flex gap-6 items-center">
           <a href="#details" className="text-sm font-medium hover:text-primary transition-colors">
             O Curso
@@ -38,7 +20,7 @@ export const Header = () => {
           </a>
         </nav>
         <Button asChild className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground font-bold">
-            <a href="#pricing">Quero me Inscrever</a>
+            <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">Quero me Inscrever</a>
         </Button>
       </div>
     </header>

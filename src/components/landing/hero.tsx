@@ -37,7 +37,7 @@ export const Hero = () => {
             O melhor curso para iniciantes: Confiável e testado por mais de 3 mil alunos no Brasil e exterior.
           </p>
           <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold text-xl py-7 px-10 rounded-lg shadow-lg transform hover:scale-105 transition-transform">
-            <a href="#pricing">
+            <a href="https://pay.kirvano.com/0b5d35b6-1af5-43b0-bed7-9640d6f5569f">
               QUERO APRENDER
             </a>
           </Button>

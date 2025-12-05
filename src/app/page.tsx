@@ -11,7 +11,6 @@ import { WhoIsItFor } from '@/components/landing/who-is-it-for';
 import { RealProof } from '@/components/landing/real-proof';
 import { About } from '@/components/landing/about';
 import { Faq } from '@/components/landing/faq';
-import { Doubts } from '@/components/landing/doubts';
 import { Footer } from '@/components/landing/footer';
 
 export default function Home() {
@@ -31,7 +30,6 @@ export default function Home() {
         <WhoIsItFor />
         <RealProof />
         <Faq />
-        <Doubts />
       </main>
       <Footer />
     </div>
