@@ -6,8 +6,32 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'nwuievvpcjrmecujwfox.supabase.co',
         port: '',
-        pathname: '/storage/v1/object/public/media/**',
+        pathname: '**',
       },
+      {
+        protocol: 'https',
+        hostname: 'joiasbotanicas.com.br',
+        port: '',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+        port: '',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'firebasestorage.googleapis.com',
+        port: '',
+        pathname: '**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'hotmart.com',
+        port: '',
+        pathname: '**',
+      }
     ],
   },
 };
