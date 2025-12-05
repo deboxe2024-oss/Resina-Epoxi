@@ -3,8 +3,14 @@
     {
       "id": "video-thumbnail",
       "description": "Thumbnail do vídeo do curso",
-      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.04890652492083758.png",
+      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.38-1.png",
       "imageHint": "course video"
+    },
+    {
+      "id": "single-feature-image",
+      "description": "Imagem de destaque de joia botânica",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.495183497990932.png",
+      "imageHint": "botanical jewelry"
     },
     {
       "id": "lavender-1",
