@@ -1,50 +1,86 @@
-import { DollarSign, Smile, Leaf, Users } from 'lucide-react';
+import Image from 'next/image';
+import { getImage } from '@/lib/placeholder-images';
+import { Check } from 'lucide-react';
 
-const achievements = [
+
+const benefits = [
     {
-        icon: DollarSign,
-        title: "Fonte de renda!",
-        description: "Nós começamos este trabalho como um hobby e em apenas 5 meses se tornou nossa fonte de renda principal. Mudamos de carreira e hoje vivemos exclusivamente das vendas de joias botânicas!"
+        icon: Check,
+        text: "Terapia criativa: alivie o estresse e descubra um novo propósito."
     },
     {
-        icon: Smile,
-        title: "Terapia criativa",
-        description: "Alivie o estresse e descubra um novo propósito."
+        icon: Check,
+        text: "Confiança e orgulho: crie peças incríveis com suas próprias mãos."
     },
     {
-        icon: Leaf,
-        title: "Contato com a naturezas",
-        description: "Trabalhe com plantas e melhore seu humor."
+        icon: Check,
+        text: "Contato com a natureza: trabalhe com plantas e melhore seu humor."
     },
     {
-        icon: Users,
-        title: "Conheça pessoas novas",
-        description: "Se desafie participando de feiras na sua cidade."
+        icon: Check,
+        text: "Conheça pessoas novas: se desafie participando de feiras na sua cidade."
     }
 ]
 
 export const Achievements = () => {
+    const incomeImage = getImage('autonomy-image');
+    const therapyImage = getImage('therapy-image');
+
     return (
-        <section className="py-12 lg:py-24 bg-white">
+        <section className="py-12 lg:py-24 bg-accent">
             <div className="container mx-auto px-4">
-                <div className="text-center max-w-3xl mx-auto">
+                <div className="text-center max-w-3xl mx-auto mb-12">
                     <h2 className="text-3xl lg:text-4xl font-extrabold text-primary mb-6">
                         O que as joias botânicas podem te ajudar a conquistar:
                     </h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 mt-12 max-w-4xl mx-auto">
-                    {achievements.map((item, index) => (
-                        <div key={index} className="flex items-start gap-6 p-6 bg-accent rounded-lg shadow-sm">
-                            <div className="flex-shrink-0">
-                                <item.icon className="w-10 h-10 text-primary" />
-                            </div>
-                            <div>
-                                <h3 className="text-xl font-bold text-gray-800 mb-2">{item.title}</h3>
-                                <p className="text-gray-600">{item.description}</p>
-                            </div>
+                <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
+                    {incomeImage && (
+                        <div className="flex justify-center">
+                            <Image
+                                src={incomeImage.imageUrl}
+                                alt={incomeImage.description}
+                                width={500}
+                                height={500}
+                                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                            />
                         </div>
-                    ))}
+                    )}
+                    <div className="text-center md:text-left">
+                        <h3 className="text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
+                            <Check className="w-7 h-7 text-primary" />
+                            Autonomia financeira: trabalhe em casa, no seu ritmo (com algo sério)!
+                        </h3>
+                        <p className="text-gray-700 text-lg mb-4">
+                            É um produto artesanal, com baixo preço de custo: com apenas 3 gramas de resina (menos de R$1,00) é possível criar um pingente pequeno com um pedacinho da natureza.
+                        </p>
+                        <p className="text-gray-700 text-lg">
+                            Não é necessário maquinário para secar a resina.
+                        </p>
+                    </div>
+                </div>
+
+                 <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="space-y-4 order-last md:order-first">
+                         {benefits.map((item, index) => (
+                            <div key={index} className="flex items-start gap-3">
+                                <item.icon className="w-6 h-6 text-primary flex-shrink-0 mt-1" />
+                                <p className="text-lg text-gray-700">{item.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    {therapyImage && (
+                        <div className="flex justify-center">
+                            <Image
+                                src={therapyImage.imageUrl}
+                                alt={therapyImage.description}
+                                width={500}
+                                height={500}
+                                className="rounded-lg shadow-xl w-full h-auto object-cover"
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </section>

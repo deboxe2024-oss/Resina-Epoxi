@@ -28,13 +28,13 @@ export const StudentWork = () => {
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {studentImages.map((image, index) => (
-                <div key={index} className="w-full aspect-square rounded-lg overflow-hidden shadow-lg">
+                <div key={index} className="w-full aspect-w-1 aspect-h-1 rounded-lg overflow-hidden shadow-lg bg-gray-100">
                     <Image
                         src={image!.imageUrl}
                         alt={image!.description}
                         width={400}
                         height={400}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                     />
                 </div>
             ))}

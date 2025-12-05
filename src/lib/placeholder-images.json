@@ -161,6 +161,24 @@
       "description": "Logo Amana Ateliê",
       "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/AMANA-ATELIE-2.png",
       "imageHint": "brand logo"
+    },
+    {
+      "id": "autonomy-image",
+      "description": "Imagem para seção de autonomia financeira",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5973578863456274.png",
+      "imageHint": "handmade jewelry"
+    },
+    {
+      "id": "therapy-image",
+      "description": "Imagem para seção de terapia criativa",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.5059543479865329.png",
+      "imageHint": "creative therapy"
+    },
+    {
+      "id": "about-us-video",
+      "description": "Vídeo de apresentação sobre os instrutores",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.321620380156568.mp4",
+      "imageHint": "intro video"
     }
   ]
 }

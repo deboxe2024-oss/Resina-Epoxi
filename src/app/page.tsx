@@ -20,6 +20,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <About />
         <Features />
         <CourseDetails />
         <StudentWork />
@@ -29,7 +30,6 @@ export default function Home() {
         <Achievements />
         <WhoIsItFor />
         <RealProof />
-        <About />
         <Faq />
         <Doubts />
       </main>
