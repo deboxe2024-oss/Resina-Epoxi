@@ -3,16 +3,18 @@ import { getImage } from '@/lib/placeholder-images';
 
 export const StudentWork = () => {
     const images = [
-        { id: 'atelie-piece', label: 'Peça do nosso ateliê' },
-        { id: 'aluna-piece-1', label: 'Peça da aluna' },
-        { id: 'atelie-piece-2', label: 'Peça do nosso ateliê' },
-        { id: 'aluna-piece-2', label: 'Peça da aluna' },
+        'student-work-1',
+        'student-work-2',
+        'student-work-3',
+        'student-work-4',
+        'student-work-5',
+        'student-work-6',
+        'student-work-7',
+        'student-work-8',
+        'student-work-9',
     ];
     
-    const studentImages = images.map(img => ({
-        ...getImage(img.id),
-        label: img.label
-    })).filter(Boolean);
+    const studentImages = images.map(id => getImage(id)).filter(Boolean);
 
   return (
     <section id="student-work" className="py-12 lg:py-24 bg-white">
@@ -24,19 +26,16 @@ export const StudentWork = () => {
           Não importa se você nunca mexeu com resina. Ensinamos a técnica completa do zero. Veja comparações reais de peças feitas por nós e pelos nossos alunos:
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
             {studentImages.map((image, index) => (
-                <div key={index} className="flex flex-col items-center">
-                    <div className="w-full aspect-square rounded-lg overflow-hidden shadow-lg mb-4">
-                        <Image
-                            src={image.imageUrl!}
-                            alt={image.description!}
-                            width={300}
-                            height={300}
-                            className="w-full h-full object-cover"
-                        />
-                    </div>
-                    <p className="font-semibold text-gray-700">{image.label}</p>
+                <div key={index} className="w-full aspect-square rounded-lg overflow-hidden shadow-lg">
+                    <Image
+                        src={image!.imageUrl}
+                        alt={image!.description}
+                        width={400}
+                        height={400}
+                        className="w-full h-full object-cover"
+                    />
                 </div>
             ))}
         </div>

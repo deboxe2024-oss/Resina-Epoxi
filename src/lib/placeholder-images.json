@@ -1,135 +1,147 @@
 {
   "placeholderImages": [
     {
-      "id": "video-thumbnail",
-      "description": "Thumbnail do vídeo do curso",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.38-1.png",
-      "imageHint": "course video"
+      "id": "hero-background-new",
+      "description": "Fundo da Hero Section",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.3016574109462512.jpg",
+      "imageHint": "nature background"
     },
     {
-      "id": "single-feature-image",
+      "id": "single-feature-image-new",
       "description": "Imagem de destaque de joia botânica",
       "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.495183497990932.png",
       "imageHint": "botanical jewelry"
     },
     {
-      "id": "lavender-1",
-      "description": "Joia de lavanda 1",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/Captura-de-Tela-2024-05-18-as-19.14.34.png",
+      "id": "what-you-will-learn-side-image",
+      "description": "Imagem lateral da seção 'O que você irá aprender'",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.7305038613256439.png",
       "imageHint": "resin jewelry"
     },
     {
-      "id": "lavender-2",
-      "description": "Joia de lavanda 2",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/Captura-de-Tela-2024-05-18-as-19.14.24.png",
-      "imageHint": "resin jewelry"
-    },
-    {
-      "id": "lavender-3",
-      "description": "Joia de lavanda 3",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/Captura-de-Tela-2024-05-18-as-19.14.46.png",
-      "imageHint": "resin jewelry"
-    },
-    {
-      "id": "lavender-4",
-      "description": "Joia de lavanda 4",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/Captura-de-Tela-2024-05-18-as-19.14.54.png",
-      "imageHint": "resin jewelry"
-    },
-    {
-      "id": "final-piece-1",
-      "description": "Peça final do curso 1",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.38-1.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "final-piece-2",
-      "description": "Peça final do curso 2",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.49-1.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "final-piece-3",
-      "description": "Peça final do curso 3",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.57-1.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "final-piece-4",
-      "description": "Peça final do curso 4",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.09.05-1.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "atelie-piece",
-      "description": "Peça do ateliê",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/1-4.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "aluna-piece-1",
-      "description": "Peça da aluna 1",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/2-3.png",
+      "id": "student-work-1",
+      "description": "Trabalho de aluno 1",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.24842092843731378.jpg",
       "imageHint": "student art"
     },
     {
-      "id": "atelie-piece-2",
-      "description": "Peça do ateliê 2",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/3-3.png",
-      "imageHint": "resin art"
-    },
-    {
-      "id": "aluna-piece-2",
-      "description": "Peça da aluna 2",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/4-3.png",
+      "id": "student-work-2",
+      "description": "Trabalho de aluno 2",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2218717021571146.jpg",
       "imageHint": "student art"
     },
     {
-      "id": "bonus-fornecedores",
-      "description": "Bônus fornecedores",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/2-1.png",
-      "imageHint": "suppliers bonus"
+      "id": "student-work-3",
+      "description": "Trabalho de aluno 3",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.7989704366141754.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "bonus-precificacao",
-      "description": "Bônus precificação",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/3-1.png",
-      "imageHint": "pricing bonus"
+      "id": "student-work-4",
+      "description": "Trabalho de aluno 4",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8729127846646254.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "bonus-fotos",
-      "description": "Bônus fotos",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/4-1.png",
-      "imageHint": "photos bonus"
+      "id": "student-work-5",
+      "description": "Trabalho de aluno 5",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.4257128830175315.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "bonus-acabamento",
-      "description": "Bônus acabamento",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/5-1.png",
-      "imageHint": "finishing bonus"
+      "id": "student-work-6",
+      "description": "Trabalho de aluno 6",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8030608287546068.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "bonus-pingentes",
-      "description": "Bônus pingentes",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/7-1.png",
-      "imageHint": "pendants bonus"
+      "id": "student-work-7",
+      "description": "Trabalho de aluno 7",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8203331769617135.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "bonus-instagram",
-      "description": "Bônus instagram",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/6-1.png",
-      "imageHint": "instagram bonus"
+      "id": "student-work-8",
+      "description": "Trabalho de aluno 8",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.22522391669275277.jpg",
+      "imageHint": "student art"
     },
     {
-      "id": "manual-joias",
-      "description": "Manual de Jóias Botânicas",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/MANUAL-DE-JOIAS-BOTANICAS-1-725x1024.png",
+      "id": "student-work-9",
+      "description": "Trabalho de aluno 9",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.8595447799348869.jpg",
+      "imageHint": "student art"
+    },
+    {
+      "id": "bonus-new-1",
+      "description": "Bônus novo 1",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.4240607661998569.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-2",
+      "description": "Bônus novo 2",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.20441121087068959.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-3",
+      "description": "Bônus novo 3",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2535081022628012.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-4",
+      "description": "Bônus novo 4",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.3494417880512881.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-5",
+      "description": "Bônus novo 5",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.051300058466726806.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-6",
+      "description": "Bônus novo 6",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.9013141034732487.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-7",
+      "description": "Bônus novo 7",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.4917033419455207.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-8",
+      "description": "Bônus novo 8",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.3896087374922106.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "bonus-new-9",
+      "description": "Bônus novo 9",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.07628083874087066.png",
+      "imageHint": "bonus content"
+    },
+    {
+      "id": "manual-joias-new",
+      "description": "Manual de Jóias Botânicas novo",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.2562257282597469.png",
       "imageHint": "ebook cover"
     },
     {
-      "id": "guia-23-problemas",
-      "description": "Guia 23 Problemas dos Iniciantes",
-      "imageUrl": "https://joiasbotanicas.com.br/wp-content/uploads/2024/05/GUIA-23-ERROS-724x1024.png",
+      "id": "possibilities-new",
+      "description": "Novas possibilidades com a técnica",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.08410111423411526.png",
+      "imageHint": "resin art"
+    },
+    {
+      "id": "guia-23-problemas-new",
+      "description": "Guia 23 Problemas dos Iniciantes novo",
+      "imageUrl": "https://nwuievvpcjrmecujwfox.supabase.co/storage/v1/object/public/media/0.6621981848045316.jpg",
       "imageHint": "ebook cover"
     },
     {

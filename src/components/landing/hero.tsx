@@ -1,9 +1,16 @@
 'use client';
 import { Button } from '@/components/ui/button';
+import { getImage } from '@/lib/placeholder-images';
 
 export const Hero = () => {
+  const heroImage = getImage('hero-background-new');
+
   return (
-    <section id="hero" className="relative text-center py-20 lg:py-32 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('https://joiasbotanicas.com.br/wp-content/uploads/2023/07/Captura-de-Tela-2023-07-25-as-12.08.38-1.png')"}}>
+    <section 
+      id="hero" 
+      className="relative text-center py-20 lg:py-32 bg-cover bg-center bg-no-repeat" 
+      style={{ backgroundImage: `url('${heroImage?.imageUrl}')`}}
+    >
       <div className="absolute inset-0 bg-black/50"></div>
       <div className="container relative z-10 mx-auto px-4">
         <h1 className="text-4xl lg:text-6xl font-extrabold text-white leading-tight mb-4">
