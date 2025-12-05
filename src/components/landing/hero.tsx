@@ -42,8 +42,9 @@ export const Hero = () => {
             </a>
           </Button>
           <div className="mt-6 text-gray-800 font-semibold">
-            <p className="text-lg">12x de R$ 15,41</p>
-            <p className="text-sm">ou R$149,00 à vista</p>
+            <p className="text-lg">9x de R$ 5,23</p>
+            <p className="text-sm">ou R$39,90 à vista</p>
+            <p className="text-xs text-gray-500 mt-2">(Certificado incluso)</p>
           </div>
         </div>
       </section>
