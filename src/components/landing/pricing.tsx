@@ -9,8 +9,8 @@ export const Pricing = () => {
         </h2>
 
         <div className="my-8">
-            <p className="text-5xl lg:text-6xl font-black text-gray-800">12x de R$ 39,90</p>
-            <p className="text-2xl text-gray-600 mt-2">ou R$399,00 à vista</p>
+            <p className="text-5xl lg:text-6xl font-black text-gray-800">9x de R$ 5,23</p>
+            <p className="text-2xl text-gray-600 mt-2">ou R$39,90 à vista</p>
             <p className="text-base text-gray-500 mt-2">De <span className="line-through">R$147,90</span> por apenas R$39,90 na promoção com certificado incluso.</p>
         </div>
 
