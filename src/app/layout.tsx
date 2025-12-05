@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import Script from 'next/script';
@@ -18,9 +18,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+        {/* Meta Pixel Code Anti-Duplo */}
         <Script
-          id="meta-pixel-anti-duplo"
+          id="meta-pixel"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
@@ -51,15 +52,8 @@ export default function RootLayout({
           <img height="1" width="1" style={{display: 'none'}}
           src="https://www.facebook.com/tr?id=689670297299694&ev=PageView&noscript=1"/>
         </noscript>
-        <Script
-          id="utmify-utms"
-          src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-          data-utmify-prevent-xcod-sck
-          data-utmify-prevent-subids
-          strategy="afterInteractive"
-        />
       </head>
-      <body className="font-sans antialiased">
+      <body className="antialiased bg-[hsl(var(--background))]">
         {children}
         <Toaster />
       </body>

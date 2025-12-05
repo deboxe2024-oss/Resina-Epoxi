@@ -1,64 +1,148 @@
 {
   "placeholderImages": [
     {
-      "id": "hero-background",
-      "description": "A background image showing a resin art workshop.",
-      "imageUrl": "https://images.unsplash.com/photo-1641893979088-87d4d9604c36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxyZXNpbiUyMGFydCUyMHdvcmtzaG9wfGVufDB8fHx8MTc2NDM0NDcyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "resin art workshop"
+      "id": "video-thumbnail",
+      "description": "Thumbnail for the main course video showing instructors.",
+      "imageUrl": "https://hotmart.com/cdn/hotmart-prod-public-files/2024/04/16/1604-453a992e-5034-4a25-9988-7517a61d15c1.png",
+      "imageHint": "resin jewelry workshop"
     },
     {
-      "id": "video-placeholder",
-      "description": "A placeholder image for the course video, showing a finished piece of resin artwork.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fplaceholder-video.9b244799.jpg&w=1920&q=75",
-      "imageHint": "resin artwork"
+      "id": "lavender-1",
+      "description": "A close-up of lavender flowers being prepared for resin art.",
+      "imageUrl": "https://images.unsplash.com/photo-1599692958189-1bdd94c34570?q=80&w=400&h=400&auto=format&fit=crop",
+      "imageHint": "lavender resin"
     },
     {
-      "id": "learn-1",
-      "description": "Image for 'Introduction to Resin' showing various resin supplies.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.6787677202376466.jpg&w=2048&q=75",
-      "imageHint": "resin necklaces"
+      "id": "lavender-2",
+      "description": "Dried lavender flowers laid out on a surface.",
+      "imageUrl": "https://images.unsplash.com/photo-1600122114704-3a91c4d51c14?q=80&w=400&h=400&auto=format&fit=crop",
+      "imageHint": "dried lavender"
     },
     {
-      "id": "learn-2",
-      "description": "Image for 'Pigmentation Techniques' showing a colorful resin lamp.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.14428733524604598.jpg&w=2048&q=75",
-      "imageHint": "resin lamp"
+      "id": "lavender-3",
+      "description": "Hands holding resin pieces with embedded lavender.",
+      "imageUrl": "https://images.unsplash.com/photo-1589823485775-290076c854b7?q=80&w=400&h=400&auto=format&fit=crop",
+      "imageHint": "resin hands"
     },
     {
-      "id": "learn-3",
-      "description": "Image for 'Mold Creation' showing resin keychains.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.4228239060173956.jpg&w=2048&q=75",
-      "imageHint": "resin keychains"
-    },
-    {
-      "id": "learn-4",
-      "description": "Image for 'Decorative Pieces' showing a resin lamp with flowers.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.9469273642130308.jpg&w=2048&q=75",
-      "imageHint": "resin flowers"
-    },
-    {
-      "id": "learn-5",
-      "description": "Image for 'Resin Jewelry' showing blue geode art.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.5062421864143695.jpg&w=2048&q=75",
-      "imageHint": "resin geode"
-    },
-    {
-      "id": "learn-6",
-      "description": "Image for 'Finishing and Polishing' showing a resin pendant with a wolf.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=https%3A%2F%2Fkdloteojnkcjblhoirea.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fpublic-files%2F0.02168658949314306.jpg&w=2048&q=75",
+      "id": "lavender-4",
+      "description": "A finished lavender resin pendant.",
+      "imageUrl": "https://images.unsplash.com/photo-1616091219416-e490593527a4?q=80&w=400&h=400&auto=format&fit=crop",
       "imageHint": "resin pendant"
     },
     {
-      "id": "guarantee-seal",
-      "description": "A seal for the 7-day money-back guarantee.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fselo-garantia.4f220d91.png&w=256&q=75",
-      "imageHint": "guarantee seal"
+      "id": "final-piece-1",
+      "description": "Example of a final resin jewelry piece made in the course.",
+      "imageUrl": "https://images.unsplash.com/photo-1599833692554-5481874554a7?w=400&h=400&auto=format&fit=crop",
+      "imageHint": "resin jewelry"
     },
     {
-      "id": "instructor-photo",
-      "description": "Photo of the instructor, Vanessa Carvalho.",
-      "imageUrl": "https://resinaemcasa.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofessora.67a57a12.png&w=640&q=75",
-      "imageHint": "instructor portrait"
+      "id": "final-piece-2",
+      "description": "Another example of a final resin jewelry piece.",
+      "imageUrl": "https://images.unsplash.com/photo-1616091219469-640533905544?w=400&h=400&auto=format&fit=crop",
+      "imageHint": "resin earring"
+    },
+    {
+      "id": "final-piece-3",
+      "description": "A different style of resin jewelry.",
+      "imageUrl": "https://images.unsplash.com/photo-1618413134180-285648507a2a?w=400&h=400&auto=format&fit=crop",
+      "imageHint": "resin necklace"
+    },
+    {
+      "id": "final-piece-4",
+      "description": "Close-up of a detailed resin piece.",
+      "imageUrl": "https://images.unsplash.com/photo-1600122114704-3a91c4d51c14?w=400&h=400&auto=format&fit=crop",
+      "imageHint": "detailed resin"
+    },
+    {
+      "id": "atelie-piece",
+      "description": "A piece made by the Amana Ateliê instructors.",
+      "imageUrl": "https://images.unsplash.com/photo-1599833692554-5481874554a7?w=300&h=300&auto=format&fit=crop",
+      "imageHint": "professional resin"
+    },
+    {
+      "id": "aluna-piece-1",
+      "description": "A piece made by a student of the course.",
+      "imageUrl": "https://images.unsplash.com/photo-1616091219469-640533905544?w=300&h=300&auto=format&fit=crop",
+      "imageHint": "student resin"
+    },
+    {
+      "id": "atelie-piece-2",
+      "description": "A second piece made by the Amana Ateliê instructors.",
+      "imageUrl": "https://images.unsplash.com/photo-1618413134180-285648507a2a?w=300&h=300&auto=format&fit=crop",
+      "imageHint": "professional resin"
+    },
+    {
+      "id": "aluna-piece-2",
+      "description": "A second piece made by a student of the course.",
+      "imageUrl": "https://images.unsplash.com/photo-1616091219416-e490593527a4?w=300&h=300&auto=format&fit=crop",
+      "imageHint": "student resin"
+    },
+    {
+      "id": "bonus-fornecedores",
+      "description": "Icon for the suppliers bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F1.png?alt=media",
+      "imageHint": "suppliers list"
+    },
+    {
+      "id": "bonus-precificacao",
+      "description": "Icon for the pricing bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F2.png?alt=media",
+      "imageHint": "pricing guide"
+    },
+    {
+      "id": "bonus-fotos",
+      "description": "Icon for the photos bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F3.png?alt=media",
+      "imageHint": "photo guide"
+    },
+    {
+      "id": "bonus-acabamento",
+      "description": "Icon for the finishing bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F4.png?alt=media",
+      "imageHint": "finishing techniques"
+    },
+    {
+      "id": "bonus-pingentes",
+      "description": "Icon for the pendants bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F5.png?alt=media",
+      "imageHint": "pendants guide"
+    },
+    {
+      "id": "bonus-instagram",
+      "description": "Icon for the Instagram bonus.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fbonus%2F6.png?alt=media",
+      "imageHint": "instagram marketing"
+    },
+    {
+      "id": "manual-joias",
+      "description": "Cover of the Botanical Jewelry Manual.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fmanual.png?alt=media",
+      "imageHint": "jewelry manual"
+    },
+    {
+      "id": "guia-23-problemas",
+      "description": "Cover of the 23 Beginner Problems Guide.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Fguia.png?alt=media",
+      "imageHint": "problems guide"
+    },
+    {
+      "id": "tv-globo-minas",
+      "description": "Video thumbnail for the TV Globo Minas feature.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Ftv-globo.png?alt=media",
+      "imageHint": "tv feature"
+    },
+    {
+      "id": "instructors-photo",
+      "description": "Photo of the instructors Isabelle and Samuel.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Finstructors.png?alt=media",
+      "imageHint": "instructors portrait"
+    },
+    {
+      "id": "amana-logo",
+      "description": "Logo for Amana Ateliê.",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/studio-9a7a7.appspot.com/o/courses%2Fjoias-botanicas%2Flogo.png?alt=media",
+      "imageHint": "amana atelie logo"
     }
   ]
 }
